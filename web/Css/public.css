@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{list-style: none}
+a{text-decoration: none}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background: #091e77;
+}
+header>iframe,footer>iframe{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.logo,.navLink{
+    float: left;
+}
+.logo{
+    margin-top: 26px;
+    margin-right: 30px;
+}
+.navLink{}
+.navLink>li{
+    /*padding: 0 10px;*/
+    width: 80px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    position: relative;
+}
+.navLink a{
+    color: #fff;
+}.navLink>li>span{
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: transparent;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.5s ease;
+ }
+.navLink>li:hover a{color: #e9a515}
+.navLink>li:hover>span{
+    background: #e9a515;
+    bottom: 0;
+}
+.login{
+    float: right;
+    width: 68px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 35px;
+    color: #fff;
+    background: #e9a515;
+    font-size: 15px;
+}
+.login>span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../image/user.png") no-repeat 0 0;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+}
+footer{
+    height: 200px;
+    background: url("../image/ext2.bmp") repeat-x 0 0;
+    text-align: center;
+    padding-top: 40px;
+}
+footer>div>div{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-blue{
+    width: 100px;
+    height: 80px;
+    text-align: right;
+}
+.footerContent{
+    width: 500px;
+    text-align: center;
+}
+.footerContent>p{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+.QrCode{
+    width: 120px;
+    height: 100px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    /*background: #e9a515;*/
+    box-shadow:inset 0 0 10px ;
+}
+::-webkit-scrollbar-track{
+    background: #091e77;
+}
+::-webkit-scrollbar-thumb{
+    background: #e9a515;
+    border-radius: 2px;
+}

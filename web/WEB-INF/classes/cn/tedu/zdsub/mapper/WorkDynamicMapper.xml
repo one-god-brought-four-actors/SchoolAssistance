@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.zdsub.dao.WorkDynamicMapper">
+  <resultMap id="BaseResultMap" type="cn.tedu.zdsub.pojo.WorkDynamic">
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="TITLE" jdbcType="VARCHAR" property="title" />
+    <result column="READ_NUM" jdbcType="INTEGER" property="readNum" />
+    <result column="SCH_ID" jdbcType="VARCHAR" property="schId" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="UPTATE_TIME" jdbcType="VARCHAR" property="uptateTime" />
+    <result column="UPTATE_USER" jdbcType="VARCHAR" property="uptateUser" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="cn.tedu.zdsub.pojo.WorkDynamic">
+    <result column="CONTEXT" jdbcType="LONGVARCHAR" property="context" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, TITLE, READ_NUM, SCH_ID, CREATE_TIME, CREATE_USER, UPTATE_TIME, UPTATE_USER
+  </sql>
+  <sql id="Blob_Column_List">
+    CONTEXT
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from workdynamic
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from workdynamic
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="cn.tedu.zdsub.pojo.WorkDynamic">
+    insert into workdynamic (ID, TITLE, READ_NUM, 
+      SCH_ID, CREATE_TIME, CREATE_USER, 
+      UPTATE_TIME, UPTATE_USER, CONTEXT
+      )
+    values (#{id,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{readNum,jdbcType=INTEGER}, 
+      #{schId,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, 
+      #{uptateTime,jdbcType=VARCHAR}, #{uptateUser,jdbcType=VARCHAR}, #{context,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.tedu.zdsub.pojo.WorkDynamic">
+    insert into workdynamic
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="title != null">
+        TITLE,
+      </if>
+      <if test="readNum != null">
+        READ_NUM,
+      </if>
+      <if test="schId != null">
+        SCH_ID,
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="uptateTime != null">
+        UPTATE_TIME,
+      </if>
+      <if test="uptateUser != null">
+        UPTATE_USER,
+      </if>
+      <if test="context != null">
+        CONTEXT,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="readNum != null">
+        #{readNum,jdbcType=INTEGER},
+      </if>
+      <if test="schId != null">
+        #{schId,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="uptateTime != null">
+        #{uptateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uptateUser != null">
+        #{uptateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="context != null">
+        #{context,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.tedu.zdsub.pojo.WorkDynamic">
+    update workdynamic
+    <set>
+      <if test="title != null">
+        TITLE = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="readNum != null">
+        READ_NUM = #{readNum,jdbcType=INTEGER},
+      </if>
+      <if test="schId != null">
+        SCH_ID = #{schId,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="uptateTime != null">
+        UPTATE_TIME = #{uptateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="uptateUser != null">
+        UPTATE_USER = #{uptateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="context != null">
+        CONTEXT = #{context,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.tedu.zdsub.pojo.WorkDynamic">
+    update workdynamic
+    set TITLE = #{title,jdbcType=VARCHAR},
+      READ_NUM = #{readNum,jdbcType=INTEGER},
+      SCH_ID = #{schId,jdbcType=VARCHAR},
+      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      UPTATE_TIME = #{uptateTime,jdbcType=VARCHAR},
+      UPTATE_USER = #{uptateUser,jdbcType=VARCHAR},
+      CONTEXT = #{context,jdbcType=LONGVARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.tedu.zdsub.pojo.WorkDynamic">
+    update workdynamic
+    set TITLE = #{title,jdbcType=VARCHAR},
+      READ_NUM = #{readNum,jdbcType=INTEGER},
+      SCH_ID = #{schId,jdbcType=VARCHAR},
+      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      UPTATE_TIME = #{uptateTime,jdbcType=VARCHAR},
+      UPTATE_USER = #{uptateUser,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  
+  <select id="selectByPage" parameterType="cn.tedu.zdsub.pojo.Page" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from workdynamic
+    limit #{start }, #{rows }
+  </select>
+  <select id="selelctCount" resultType="java.lang.Integer">
+    select count(*) from workdynamic
+  </select>
+  <select id="selectByParam" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from workdynamic
+    where TITLE LIKE #{param}
+    limit #{page.start }, #{page.end }
+  </select>
+  <select id="selectParamCount" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(*) from workdynamic
+    where TITLE LIKE #{param}
+  </select>
+</mapper>

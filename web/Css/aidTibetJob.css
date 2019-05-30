@@ -1,0 +1,125 @@
+.banner{
+    height: 240px;
+    margin-top: 10px;
+}
+.banner>img{
+    display: block;
+    width: 100%;
+    height: 240px;
+}
+/*标题*/
+.inForTitle{
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;
+}
+.inForTitle>li{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    margin: 0 35px;
+    position: relative;
+    color: #999;
+}
+.inForTitle>li:hover,.inForTitle>.on{
+    color: #000;
+}
+.inForTitle>li::selection{display: none}
+.inForTitle>li>span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #091e77;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+.inForTitle>li:hover>span{
+    bottom: 0;
+}
+.inForTitle>.on>span{
+    bottom: 0;
+}
+/*分页按钮功能*/
+.pageMain{
+    margin-top: 15px;
+}
+.pageMain>li{
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #eee;
+}
+.pageMain>li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pageMain>li>a{
+    color: #999;
+}
+.pageMain>li>a:hover{
+    color: #e9a515;
+    font-size: 17px;
+}
+.pageMain>li span{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+}
+.pageMain>li span:first-child{
+    width: 720px;
+    float: left;
+    padding-left:42px;
+}
+.pageMain>li span:last-child{
+    width: 230px;
+    float: right;
+    text-align: right;
+    padding-right: 45px;
+}
+.pageBox>*{
+    display: inline-block;
+    font-size: 14px;
+}
+.pageBox{
+    margin: 25px auto;
+    text-align: center;
+}
+.len,.iNum{
+    color: #999;
+    padding: 0 5px;
+    margin: 0 3px;
+}
+.len>span,.iNum>span{
+    color: #091e77;
+    font-weight: bold;
+}
+.first,.last,.prev,.next{
+    padding: 5px 10px;
+    color: #fff;
+    background: #091e77;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.first::selection,.last::selection,.prev::selection,.next::selection{display: none}
+.pageBox .prohibit{
+    background: #ddd;
+}
+/**/
+.inForBox{
+    position: relative;
+    height: 440px;
+}
+.inForBox01,
+.inForBox02,
+.inForBox03{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

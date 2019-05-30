@@ -1,0 +1,128 @@
+#detail{
+    background: #ececec;
+}
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+}
+.crumbs>a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 14px;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.crumbs>img{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-top: 13px;
+}
+.detail:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.detail{
+    padding-bottom: 15px;
+}
+.detail-left{
+    float: left;
+    min-height: 620px;
+    width: 746px;
+}
+.detail-left-top{
+    height: 350px;
+    background: #fff;
+    padding: 5px 13px 0;
+}
+.detail-left-top>h1{
+    height: 84px;
+    line-height: 84px;
+    font-size: 28px;
+    font-weight: normal;
+}
+.detail-left-top>p{
+    font-size: 20px;
+}
+.detail-left-top>div{
+    height: 86px;
+    padding-top: 27px;
+}
+.detail-left-top>div>span{
+    display: inline-block;
+    padding: 7px 35px;
+    color: #e9a515;
+    border: 1px solid #e9a515;
+    border-radius: 60px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.detail-left-top>section{
+
+}
+.detail-left-top>section>div{
+    font-size: 15px;
+    height: 55px;
+    line-height: 55px;
+}
+.detail-left-top>section>.btn{
+    width: 245px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background: #e9a515;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+.detail-left-top>section>.btn:hover{
+    background: #ffb715;
+}
+.detail-left-bottom{
+    min-height: 250px;
+    background: #fff;
+    margin-top: 20px;
+    padding: 0 13px;
+}
+.detail-left-bottom>h1{
+    font-weight: normal;
+    font-size: 20px;
+    height: 75px;
+    line-height: 75px;
+}
+.detail-left-bottom>p{
+    text-indent: 32px;
+    line-height: 26px;
+}
+.detail-right{
+    float: right;
+    height: 620px;
+    width: 240px;
+    background: #fff;
+}
+.detail-right>h3{
+    height: 58px;
+    line-height: 58px;
+    padding-left: 12px;
+    font-weight: normal;
+}
+.detail-right>ul{}
+.detail-right>ul>li{}
+.detail-right>ul>li>h5{
+    height: 48px;
+    line-height: 48px;
+    padding-left: 25px;
+    font-weight: normal;
+}
+.detail-right>ul>li>p{
+    padding-left: 25px;
+    font-size: 12px;
+    color: #e9a515;
+    height: 60px;
+}
