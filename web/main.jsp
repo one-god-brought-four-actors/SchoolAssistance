@@ -22,13 +22,13 @@
         <!--导航-->
         <ul class="navLink">
             <li><a href="main">首页</a></li>
-            <li><a href="index/work">援藏工作</a></li>
-            <li><a href="index/policy">援藏政策</a></li>
-            <li><a href="index/need">援藏需求</a></li>
-            <li><a href="index/process">援藏路径</a></li>
-            <li><a href="index/school">援藏高校</a></li>
+            <li><a href="index/workindex.jsp">援藏工作</a></li>
+            <li><a href="index/policyindex.jsp">援藏政策</a></li>
+            <li><a href="index/needindex.jsp">援藏需求</a></li>
+            <li><a href="index/processindex.jsp">援藏路径</a></li>
+            <li><a href="index/schoolindex.jsp">援藏高校</a></li>
             <!-- <li><a href="index/work">工作动态</a></li> -->
-            <li><a href="index/adver">人员招聘</a></li>
+            <li><a href="index/adverindex.jsp">人员招聘</a></li>
         </ul>
         <!--登陆-->
         
@@ -37,7 +37,7 @@
 		        <a href="login.html" class="login"><!--<span></span>-->登陆</a>
 			</c:when>
 			<c:otherwise>
-				欢迎您：${manager.userName}<a href="menu/index" class="login"><!--<span></span>-->前往后台</a>
+				欢迎您：${manager.userName}<a href="index.jsp" class="login"><!--<span></span>-->前往后台</a>
 			</c:otherwise>    
 		</c:choose>
 		
