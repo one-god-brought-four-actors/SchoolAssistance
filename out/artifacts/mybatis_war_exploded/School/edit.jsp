@@ -118,7 +118,7 @@
         } );
 
 		$('#backid').click(function(){
-			window.location.href="school/all";
+			window.location.href="SchoolListServlet";
 		 });
 
         $("#submit-button").click(function(){
