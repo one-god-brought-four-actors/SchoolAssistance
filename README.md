@@ -62,4 +62,5 @@ git branch -d [分支名]         // 删除指定分支
 git status                      // 查看文件/暂存区状态(当文件被操作时,可以看到哪些文件被操作了)
 git add [文件]                // 添加文件到暂存区
 git commit -m "xxx"         // 将暂存区的文件提交到本地版本库
+git push -u origin [分支名]                   // 将本地数据推送到指定分支
 ```
