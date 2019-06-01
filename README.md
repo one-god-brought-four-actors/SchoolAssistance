@@ -3,7 +3,10 @@ ____
 #### 需求设计
 ![image](https://user-images.githubusercontent.com/19285429/58611014-3a112c80-82e0-11e9-9cca-6e1cc671542b.png)
 
-#### 数据库表段设计
+### 导入数据库
+    + 创建数据库 `create database tendu;`
+    + 导入 `mysql -uroot -p tendu < tendu.sql`
+    
 ### 数据库设计
 ___
 
