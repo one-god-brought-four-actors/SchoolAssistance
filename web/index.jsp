@@ -82,7 +82,7 @@
 			},
 			{text:'援藏工作',
 				items:[
-					{id:'1',text:'需求管理',href:'Need/index.jsp'},
+					{id:'1',text:'需求管理',href:'NeedListServlet'},
 				]
 			},		
       		{text:'招聘管理',

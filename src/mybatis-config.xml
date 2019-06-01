@@ -27,7 +27,7 @@
         <!--<mapper class="com.tendu.mapper.UserMapper" />-->
         <mapper resource="com/tendu/mapper/mybatis-mapper.xml" />
         <mapper resource="com/tendu/mapper/school-mapper.xml" />
-
+        <mapper resource="com/tendu/mapper/need-mapper.xml" />
         <!--<mapper class="com.tendu.mapper.SchoolMapper" />-->
         <!--<mapper resource="com/tendu/mapper/school-mapper.xml" />-->
     </mappers>

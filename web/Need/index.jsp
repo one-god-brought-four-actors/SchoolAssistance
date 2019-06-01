@@ -63,16 +63,12 @@ body {
 		<c:forEach items="${needs }" var="s">
 		<tr>
 			<td>${s.id }</td>
-			<td style="max-width: 220px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-				<a title="点击查看全文" href="${pageContext.request.contextPath }/need/toShow/${s.id }">
-					${s.title }
-				</a>
-			</td>
-			<td>${s.level }</td>
-			<td style="max-width: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">${s.schId }</td>
-			<td>${s.readNum }</td>
-			<td>${s.sendTime }</td>
-			<td>${s.createUser }</td>
+			<td>${s.title }</td>
+			<td>${s.risk_level }</td>
+			<td>${s.school_id }</td>
+			<td>${s.hits }</td>
+			<td>${s.create_time }</td>
+			<td>${s.create_user }</td>
 			<td>
 				 <a class="option-button" href="${pageContext.request.contextPath }/need/toEdit/${s.id }">编辑</a>
 				|<a class="option-button" onclick="del(${s.id});">删除</a>

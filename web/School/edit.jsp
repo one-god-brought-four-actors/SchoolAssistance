@@ -95,10 +95,9 @@
     <tr>
         <td class="tableleft">援藏历史</td>
         <td>
-             <textarea rows="5" cols="20" id="supHistory" name="history" style="width: 500px;">${school.history }</textarea>
+                <textarea rows="5" cols="20" id="supHistory" name="history" style="width: 500px;">${school.history }</textarea>
         </td>
     </tr>
-
     <tr>
         <td class="tableleft"></td>
         <td>
@@ -122,6 +121,7 @@
 		 });
 
         $("#submit-button").click(function(){
+            var id = $("[name=id]").val();
             var schName = $("#schName").val();
             var recSchool = $('input[name="is_need"]:checked').val();
             var isZup = $('input[name="is_go"]:checked').val();
@@ -132,10 +132,11 @@
             // message = encodeURIComponent(message);
 
             $.ajax({
-                url:'SchoolAddServlet',
+                url:'SchoolEditServlet',
                 type:'post',
                 async: true,
                 data: {
+                    id: id,
                     school_name: schName,
                     is_need: recSchool,
                     is_go: isZup,
