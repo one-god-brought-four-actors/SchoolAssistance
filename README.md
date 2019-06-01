@@ -23,7 +23,6 @@ ___
     create_time varchar(64)             // 发布时间
     create_user int             // 发布者
 ```
-
 * 工作动态(Work)
 ```
 表名: works
