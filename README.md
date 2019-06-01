@@ -21,7 +21,7 @@ ___
     info text                           // 详细信息
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
 ```
 
 * 工作动态(Work)
@@ -34,7 +34,7 @@ ___
     school_id int                       // 发布学校
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间/更新时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
 ```
 
 * 人才引进(Advr)
@@ -47,5 +47,19 @@ ___
     info text                           // 详细信息
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间/更新时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
+```
+
+#### git基本命令
+```
+git pull        // 同步远程仓库的代码到本地
+
+git branch      // 查看分支
+git checkout [分支名]          // 切换到指定分支(分支必须存在)
+git checkout -b [分支名]       // 创建一个新的分支并切换到新分支
+git branch -d [分支名]         // 删除指定分支
+
+git status                      // 查看文件/暂存区状态(当文件被操作时,可以看到哪些文件被操作了)
+git add [文件]                // 添加文件到暂存区
+git commit -m "xxx"         // 将暂存区的文件提交到本地版本库
 ```
