@@ -21,7 +21,7 @@ ___
     info text                           // 详细信息
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
 ```
 
 * 工作动态(Work)
@@ -34,7 +34,7 @@ ___
     school_id int                       // 发布学校
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间/更新时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
 ```
 
 * 人才引进(Advr)
@@ -47,5 +47,5 @@ ___
     info text                           // 详细信息
     hits int default 0                  // 阅读量
     create_time varchar(64)             // 发布时间/更新时间
-    create_user varchar(64)             // 发布者
+    create_user int             // 发布者
 ```
