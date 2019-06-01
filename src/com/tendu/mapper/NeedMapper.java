@@ -15,6 +15,8 @@ public interface NeedMapper {
 
 //    Integer deleteSchoolById(Integer id);
     int insert(Need need);
+
+    int update(Need need);
 //
 //    Integer updateSchool(Need need);
 }

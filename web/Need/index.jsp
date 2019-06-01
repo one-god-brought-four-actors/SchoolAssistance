@@ -64,7 +64,16 @@ body {
 		<tr>
 			<td>${s.id }</td>
 			<td>${s.title }</td>
-			<td>${s.risk_level }</td>
+			<td>
+				<c:choose>
+					<c:when test="${s.risk_level == 2 }">
+						非常紧急
+					</c:when>
+					<c:otherwise>
+						紧急
+					</c:otherwise>
+				</c:choose>
+			</td>
 			<td>${s.school_id }</td>
 			<td>${s.hits }</td>
 			<td>${s.create_time }</td>

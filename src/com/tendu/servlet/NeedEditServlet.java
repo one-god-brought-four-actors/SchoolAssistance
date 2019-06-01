@@ -13,12 +13,35 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @WebServlet("/NeedEditServlet")
 public class NeedEditServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        String title = request.getParameter("title");
+        Integer risk_level = Integer.parseInt(request.getParameter("level"));
+        Integer school_id = Integer.parseInt(request.getParameter("schId"));
+        String info = request.getParameter("info");
 
+
+        Need need = new Need();
+        need.setId(id);
+        need.setTitle(title);
+        need.setRisk_level(risk_level);
+        need.setSchool_id(school_id);
+        need.setInfo(info);
+
+        SqlSession session = DBTools.getSession();
+        NeedMapper needMapper = session.getMapper(NeedMapper.class);
+        needMapper.update(need);
+
+        session.commit();
+        session.close();
+        response.sendRedirect("NeedListServlet");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,6 +58,6 @@ public class NeedEditServlet extends HttpServlet {
         request.setAttribute("need", list.get(0));
         request.setAttribute("schools",list2);
         session.close();
-        request.getRequestDispatcher("Need/show.jsp").forward(request, response);
+        request.getRequestDispatcher("Need/edit.jsp").forward(request, response);
     }
 }
