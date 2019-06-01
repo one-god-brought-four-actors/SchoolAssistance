@@ -38,17 +38,17 @@
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">需求编号</td>
-        <td>${need.id }</td>
+        <td>${needs.id }</td>
     </tr>
     <tr>
         <td class="tableleft">标题</td>
-        <td >${need.title }</td>
+        <td >${needs.title }</td>
     </tr>
     <tr>
         <td class="tableleft">紧急状态</td>
         <td >
         	<c:choose>
-        		<c:when test="${need.level == 2 }">
+        		<c:when test="${needs.risk_level == 2 }">
         			非常紧急
         		</c:when>
         		<c:otherwise>
@@ -61,8 +61,8 @@
     	<td class="tableleft">学校</td>
     	<td>
     		<c:forEach items="${schools }" var="sch">
-    			<c:if test="${sch.id == need.schId }">
-    				${sch.schName}
+    			<c:if test="${sch.id == needs.school_id }">
+    				${sch.school_name}
     			</c:if>
     		</c:forEach>
     	</td>
@@ -70,7 +70,7 @@
     <tr>
     	<td class="tableleft">详细信息</td>
     	<td>
-    		${need.context }
+    		${needs.info }
     	</td>
     </tr>
    

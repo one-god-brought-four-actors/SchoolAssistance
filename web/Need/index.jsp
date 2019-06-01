@@ -72,7 +72,7 @@ body {
 			<td>
 				 <a class="option-button" href="${pageContext.request.contextPath }/need/toEdit/${s.id }">编辑</a>
 				|<a class="option-button" onclick="del(${s.id});">删除</a>
-				|<a class="option-button" href="${pageContext.request.contextPath }/need/toShow/${s.id }">查看</a>
+				|<a class="option-button" href="NeedInfoServlet?id=${s.id}">查看</a>
 			</td>
 		</tr>
 		</c:forEach>
@@ -123,7 +123,7 @@ body {
 <script>
     $(function () {
 		$('#addnew').click(function(){
-				window.location.href="need/toAdd";
+				window.location.href="NeedAddServlet";
 		 });
     });
 
@@ -131,18 +131,7 @@ body {
 	{
 		if(confirm("确定要删除吗？"))
 		{
-			$.ajax({
-				url:"need/del/" + id,
-				async: true,
-				type: "post",
-				success: function(result){
-					alert(result);
-					window.location.href = "need/all";
-				},
-				error: function(){
-					alert("netword is error");
-				}
-			});		
+			window.location.href="DeleteNeedServlet?id="+id;
 		}
 	}
 </script>

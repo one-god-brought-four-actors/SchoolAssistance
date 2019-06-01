@@ -38,7 +38,7 @@
 
     </style>
 </head>
-<form action="need/add" method="post">
+<form action="NeedAddServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td class="tableleft">标题</td>
@@ -47,9 +47,9 @@
     <tr>
         <td class="tableleft">紧急状态</td>
         <td >
-        	<input type="radio" id="level" name="level" value="2" checked/> 非常紧急
+        	<input type="radio"  name="level" value="2" checked/> 非常紧急
         	&nbsp;&nbsp;&nbsp;&nbsp;
-           	<input type="radio" id="level" name="level" value="1" /> 紧急
+           	<input type="radio"  name="level" value="1" /> 紧急
         </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@
     	<td>
     		<select id="schId" name="schId">
     			<c:forEach items="${schools }" var="sch">
-    				<option value="${sch.id }">${sch.schName }</option>
+    				<option value="${sch.id }">${sch.school_name }</option>
     			</c:forEach>
     		</select>
     	</td>
@@ -66,7 +66,7 @@
     	<td class="tableleft">详细信息</td>
     	<td>
     		<div>
-		    	<script id="editor" type="text/plain" style="width:800px;height:400px;"></script>
+		    	<script id="editor" name="info" type="text/plain" style="width:800px;height:400px;"></script>
 	    	</div>
     	</td>
     </tr>
@@ -74,7 +74,7 @@
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button>
+            <button type="submit"  class="btn btn-primary" type="button">保存</button>
             &nbsp;&nbsp;
             <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
@@ -86,49 +86,6 @@
     $(function () {
     	
     	var ue = UE.getEditor('editor');
-    	
-    	$("option").click(function(){
-			$("#schId").removeAttr("size");
-			$("#schId").blur();
-			this.attr("selected","");
-		});
- 
-		$("#schId").focus(function(){
-			$("#schId").attr("size","10");
-		});
-    	
-		$('#backid').click(function(){
-				window.location.href="need/all";
-		 });
-
-		$("#submit-button").click(function(){
-			var title = $("#title").val();
-			var level = $('input[name="level"]:checked').val();
-			var context = ue.getContent();
-			var schId = $("#schId").val();
-			
-			/* 文本转义防止出现丢失 */
-			context = encodeURIComponent(context);
-			
-			var data  = "&title=" + title;
-				data += "&level=" + level;
-				data += "&context=" + context;
-				data += "&schId=" + schId;
-				
-			$.ajax({
-				url:'need/add',
-				type:'post',
-				async: true,
-				data:data,
-				success:function(message){
-					alert(message);
-					window.location.href = "need/all";
-				},
-				error:function(){
-					alert('network is error');
-				}
-			});
-		});
     });
 </script>
 </html>

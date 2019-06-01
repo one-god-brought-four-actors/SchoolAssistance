@@ -10,22 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3826238a-6e16-4252-b60d-36f463805894" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/DeleteUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolAddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolEditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolEditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/SchoolListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/UserEditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/UserEditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/UserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/UserInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tendu/servlet/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/servlet/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Need/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Need/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Need/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Need/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/School/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/School/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Need/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Need/show.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,31 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolAddServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/Need/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/school-mapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolEditServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="18" column="68" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="68" />
+            <state relative-caret-position="436">
+              <caret line="72" column="82" lean-forward="true" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -83,26 +54,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/School/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2756">
-              <caret line="106" column="8" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+            <state relative-caret-position="1828">
+              <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="104">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolListServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteNeedServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -110,35 +99,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="416">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserEditServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="382">
+              <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserInfoServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedInfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="219">
+              <caret line="27" column="68" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserListServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/Need/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="906">
+              <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -197,9 +186,7 @@
         <option value="$PROJECT_DIR$/src/com/tendu/model/Need.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/rtet.fxml" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/need-mapper" />
-        <option value="$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java" />
         <option value="$PROJECT_DIR$/src/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/web/Need/index.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/NeedListServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java" />
@@ -208,12 +195,20 @@
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/SchoolEditServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/SchoolListServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/UserEditServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/UserInfoServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/UserListServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/School/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/com/tendu/servlet/NeedInfoServlet.java" />
+        <option value="$PROJECT_DIR$/web/Need/show.jsp" />
+        <option value="$PROJECT_DIR$/src/com/tendu/servlet/DeleteNeedServlet.java" />
+        <option value="$PROJECT_DIR$/web/Need/index.jsp" />
+        <option value="$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tendu/servlet/NeedAddServlet.java" />
+        <option value="$PROJECT_DIR$/web/Need/add.jsp" />
       </list>
     </option>
   </component>
@@ -230,17 +225,44 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="70" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="475" />
     <option name="y" value="125" />
     <option name="width" value="1642" />
-    <option name="height" value="1012" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,34 +323,7 @@
               <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
               <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,16 +350,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559388054651" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559395290858" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JSP\SchoolAssistance\web\ueditor\lang\zh-cn" />
       <recent name="F:\JSP\SchoolAssistance\web\WEB-INF\lib" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/com/tendu/test" />
@@ -483,28 +480,29 @@
       <workItem from="1559176347135" duration="9405000" />
       <workItem from="1559199693896" duration="647000" />
       <workItem from="1559375254859" duration="106000" />
-      <workItem from="1559381833175" duration="6002000" />
+      <workItem from="1559381833175" duration="10616000" />
+      <workItem from="1559392629000" duration="2656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47255000" />
+    <option name="totallyTimeSpent" value="54525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.91709846" visible="true" weight="0.1945629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.93648815" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.08290155" side_tool="true" visible="true" weight="0.1945629" />
+      <window_info id="Web" order="7" sideWeight="0.06351183" side_tool="true" visible="true" weight="0.19722815" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37201735" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12906724" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,7 +511,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32865497" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32943925" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -536,75 +534,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/School/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Js/common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ueditor/ueditor.parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4337">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ueditor/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2104">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/ueditor/lang/zh-cn/zh-cn.js" />
-    <entry file="file://$PROJECT_DIR$/WebContent/School/edit.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/ueditor/lang/zh-cn/zh-cn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9855">
-          <caret line="657" column="10" lean-forward="true" selection-start-line="657" selection-start-column="10" selection-end-line="657" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/School/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/School/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -659,9 +588,6 @@
     <entry file="file://$PROJECT_DIR$/web/Need/edit.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Need/add.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Work/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -689,74 +615,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/model/Need.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2028">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-          <folding>
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.tld">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/rtet.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/ssss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/sdfadf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/sdfa.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.tld" />
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/rtet.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/ssss" />
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/sdfadf" />
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/sdfa.xml" />
     <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/mybatis-mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -784,16 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -809,41 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Need/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3432">
           <caret line="132" column="26" selection-start-line="116" selection-start-column="8" selection-end-line="132" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,24 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -899,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/school-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolEditServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -913,10 +714,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="31" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/SchoolInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/School/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/school-mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/School/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ueditor/lang/zh-cn/zh-cn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="40" lean-forward="true" selection-end-line="669" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/User/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/User/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1144">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/NeedMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/model/Need.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/need-mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="27" column="68" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteNeedServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/DeleteSchoolServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="906">
+          <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="72" column="82" lean-forward="true" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/School/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2756">
-          <caret line="106" column="8" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        <state relative-caret-position="1828">
+          <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -987,6 +935,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>mybatisLib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

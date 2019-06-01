@@ -1,0 +1,277 @@
+/*头部样式*/
+header{
+    height: 100px;
+    background: #091e77;
+}
+.logo,.navLink{
+    float: left;
+}
+.logo{
+    margin-top: 26px;
+    margin-right: 30px;
+}
+.navLink{}
+.navLink>li{
+    padding: 0 10px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+.navLink a{
+    color: #fff;
+}
+.navLink a:hover{color: #e9a515}
+.login{
+    float: right;
+    width: 68px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 35px;
+    color: #fff;
+    background: #e9a515;
+    font-size: 15px;
+}
+.login>span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../image/user.png") no-repeat 0 0;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+}
+/*内容页样式*/
+.section01:after,.section02:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.section01{
+    margin-top: 10px;
+}
+.section01-left{
+    float: left;
+    width: 630px;
+    height: 400px;
+}
+.section01-left>li{
+    width: 210px;
+    height: 200px;
+    float: left;
+    position: relative;
+    perspective: 1000px;
+}
+.section01-left>li:hover .sectionMode01{
+    transform: rotateY(-90deg);
+}
+.section01-left>li:hover .sectionMode02{
+    transform: rotateY(0deg);
+}
+.section01-left>li:first-child>.sectionMode01{background: #e9a515}
+.section01-left>li:nth-child(2)>.sectionMode01{background: #e8b549}
+.section01-left>li:nth-child(3)>.sectionMode01{background: #f9d17d}
+.section01-left>li:nth-child(4)>.sectionMode01{background: #5f60cc}
+.section01-left>li:nth-child(5)>.sectionMode01{background: #3536ba}
+.section01-left>li:last-child>.sectionMode01{background: #091e77}
+.sectionMode01{
+    width: 210px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease-in-out 0s;
+    transform: rotateY(0deg);
+}
+.sectionMode01>span{
+    width: 95px;
+    height: 94px;
+    display: block;
+    margin: 36px 0 19px 57.5px;
+    background: url("../image/index-icon.png") no-repeat 0 0;
+}
+.section01-left>li:first-child .sectionMode01>span{background: url("../image/index-icon.png") no-repeat 0 0;}
+.section01-left>li:first-child .sectionMode02>a{
+    border: 1px solid #e9a515;
+    color: #e9a515;
+}
+.section01-left>li:nth-child(2) .sectionMode01>span{background: url("../image/index-icon.png") no-repeat -105px 0;}
+.section01-left>li:nth-child(2) .sectionMode02>a{
+    border: 1px solid #e8b549;
+    color: #e8b549;
+}
+.section01-left>li:nth-child(3) .sectionMode01>span{background: url("../image/index-icon.png") no-repeat -202px 0;}
+.section01-left>li:nth-child(3) .sectionMode02>a{
+    border: 1px solid #f9d17d;
+    color: #f9d17d;
+}
+.section01-left>li:nth-child(4) .sectionMode01>span{background: url("../image/index-icon.png") no-repeat 6px -98px;}
+.section01-left>li:nth-child(4) .sectionMode02>a{
+    border: 1px solid #5f60cc;
+    color: #5f60cc;
+}
+.section01-left>li:nth-child(5) .sectionMode01>span{background: url("../image/index-icon.png") no-repeat -105px -98px;}
+.section01-left>li:nth-child(5) .sectionMode02>a{
+    border: 1px solid #3536ba;
+    color: #3536ba;
+}
+.section01-left>li:last-child .sectionMode01>span{background: url("../image/index-icon.png") no-repeat -202px -98px;}
+.section01-left>li:last-child .sectionMode02>a{
+    border: 1px solid #091e77;
+    color: #091e77;
+}
+.sectionMode01>h1{
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+.sectionMode02{
+    width: 210px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease-in-out 0s;
+    transform: rotateY(90deg);
+}
+.sectionMode02>a{
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    /*border: 1px solid #e9a515;*/
+    color: #e9a515;
+    text-align: center;
+    margin: 82px auto;
+}
+.sectionMode02>a{}
+.section01-right{
+    float: right;
+    width: 360px;
+    height: 400px;
+}
+.section01-right-title{
+    height: 66px;
+    line-height: 66px;
+    background: #e9a515;
+    text-align: center;
+    font-size: 22px;
+}
+.section01-right-title>span{
+    display: inline-block;
+    width: 41px;
+    height: 48px;
+    background: url("../image/index-icon.png") no-repeat 0 -197px;
+    vertical-align: middle;
+}
+.section01-right>ul{
+    width: 360px;
+    height: 328px;
+    border: 1px solid #091e77;
+    margin-top: 6px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.section01-right>ul>li{
+    list-style: decimal;
+    padding: 10px 0;
+}
+.section02{
+    margin: 20px auto 10px;
+    height: 260px;
+}
+/*.section02>div{
+    height: 400px;
+}*/
+.section02-left{
+    float: left;
+    width: 300px;
+    overflow: hidden;
+}
+.section02-left-img{
+    height: 200px;
+    background: red;
+}
+.section02-slider-img{
+    overflow: hidden;
+    position: relative;
+    width: 1500px;
+    height: 200px;
+}
+.section02-slider-img>li{
+    float: left;
+}
+.section02-slider-img img{
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+.section02-slider-btn{}
+.section02-left>h4{
+    text-align: center;
+    font-weight: normal;
+}
+.section02-center{
+    float: left;
+    width: 423px;
+    margin-left: 20px;
+}
+.section02-center-title{
+    height: 41px;
+    background: url("../image/tableBg.png") no-repeat 0 0;
+    position: relative;
+}
+.section02-center-title>h1{
+    font-size: 22px;
+    font-weight: normal;
+    position: absolute;
+    top: 6px;
+    left: 55px;
+}
+.section02-center-title>a{
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.section02-center>ul{
+    padding-left: 30px;
+}
+.section02-center>ul>li{
+    padding: 10px 0;
+    border-bottom: 1px dashed #000;
+    list-style: decimal;
+}
+.section02-right{
+    float: right;
+    width: 235px;
+}
+.section02-right-title{
+    text-align: center;
+    height: 41px;
+    line-height: 41px;
+    background: #e9a515;
+}
+.section02-right-title>span{
+    display: inline-block;
+    width: 29px;
+    height: 34px;
+    background: url("../image/index-icon.png") no-repeat -59px -211px;
+    vertical-align: middle;
+}
+.section02-right>ul{
+    padding: 10px 20px;
+    border: 1px solid #091e77;
+    margin-top: 5px;
+}
+.section02-right>ul>li{
+    padding: 5px 0;
+}
+.list>li{
+    /*transition: all 0.5s ease;*/
+    cursor: pointer;
+}
+.list>li:hover{
+    font-size: 18px;
+    color: #e9a515;
+}

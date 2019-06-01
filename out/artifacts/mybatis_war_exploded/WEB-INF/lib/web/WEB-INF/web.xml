@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+						http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	metadata-complete="false" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<!-- Spring和mybatis的配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring-mybatis.xml</param-value>
+	</context-param>
+	<!-- Spring监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- 防止Spring内存溢出监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<!-- springmvc上下文配置路径 -->
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>UserListServlet</servlet-name>-->
+        <!--<servlet-class>com.tendu.servlet.UserListServlet</servlet-class>-->
+    <!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>UserListServlet</servlet-name>-->
+		<!--<url-pattern>/UserListServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>DeleteUserServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.DeleteUserServlet</servlet-class>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>DeleteUserServlet</servlet-name>-->
+		<!--<url-pattern>/DeleteUserServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>SchoolListServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.SchoolListServlet</servlet-class>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>SchoolListServlet</servlet-name>-->
+		<!--<url-pattern>/SchoolListServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>DeleteSchoolServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.DeleteSchoolServlet</servlet-class>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>DeleteSchoolServlet</servlet-name>-->
+		<!--<url-pattern>/DeleteSchoolServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+	<!--<servlet>-->
+		<!--<servlet-name>UserInfoServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.UserInfoServlet</servlet-class>-->
+	<!--</servlet>-->
+    <!--<servlet-mapping>-->
+		<!--<servlet-name>UserInfoServlet</servlet-name>-->
+		<!--<url-pattern>/UserInfoServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>UserAddServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.UserAddServlet</servlet-class>-->
+	<!--</servlet>-->
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>UserAddServlet</servlet-name>-->
+		<!--<url-pattern>/UserAddServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>UserEditServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.UserEditServlet</servlet-class>-->
+	<!--</servlet>-->
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>UserEditServlet</servlet-name>-->
+		<!--<url-pattern>/UserEditServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+
+	<!--<servlet>-->
+		<!--<servlet-name>SchoolAddServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.SchoolAddServlet</servlet-class>-->
+	<!--</servlet>-->
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>SchoolAddServlet</servlet-name>-->
+		<!--<url-pattern>/SchoolAddServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+    <servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+
+	<!--<servlet>-->
+		<!--<servlet-name>SchoolInfoServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.SchoolInfoServlet</servlet-class>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>SchoolInfoServlet</servlet-name>-->
+		<!--<url-pattern>/SchoolInfoServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<!--<servlet>-->
+		<!--<servlet-name>SchoolEditServlet</servlet-name>-->
+		<!--<servlet-class>com.tendu.servlet.SchoolEditServlet</servlet-class>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>SchoolEditServlet</servlet-name>-->
+		<!--<url-pattern>/SchoolEditServlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+	<filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+  
+  
+  
+</web-app>
