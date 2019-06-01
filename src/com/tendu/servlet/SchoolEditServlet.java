@@ -37,7 +37,7 @@ public class SchoolEditServlet extends HttpServlet {
 
         SchoolMapper schoolMapper = session.getMapper(SchoolMapper.class);
         List<School> schools = schoolMapper.querySchoolNameById(school_id);
-
+        session.close();
         request.setAttribute("school", schools.get(0));
         request.getRequestDispatcher("School/edit.jsp").forward(request, response);
     }

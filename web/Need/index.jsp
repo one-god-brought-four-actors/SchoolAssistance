@@ -70,7 +70,7 @@ body {
 			<td>${s.create_time }</td>
 			<td>${s.create_user }</td>
 			<td>
-				 <a class="option-button" href="${pageContext.request.contextPath }/need/toEdit/${s.id }">编辑</a>
+				 <a class="option-button" href="NeedEditServlet?id=${s.id }">编辑</a>
 				|<a class="option-button" onclick="del(${s.id});">删除</a>
 				|<a class="option-button" href="NeedInfoServlet?id=${s.id}">查看</a>
 			</td>

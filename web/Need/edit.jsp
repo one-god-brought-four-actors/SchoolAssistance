@@ -37,7 +37,7 @@
 
     </style>
 </head>
-<form action="need/edit" method="post">
+<form action="NeedEditServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">需求编号</td>
@@ -51,15 +51,15 @@
         <td class="tableleft">紧急状态</td>
         <td >
         	<c:choose>
-        		<c:when test="${need.level == 2 }">
-        			<input type="radio" id="level" name="level" value="2" checked/> 非常紧急
+        		<c:when test="${need.risk_level == 2 }">
+        			<input type="radio"  name="level" value="2" checked/> 非常紧急
         			&nbsp;&nbsp;&nbsp;&nbsp;
-           			<input type="radio" id="level" name="level" value="1" /> 紧急
+           			<input type="radio"  name="level" value="1" /> 紧急
         		</c:when>
         		<c:otherwise>
-        			<input type="radio" id="level" name="level" value="2"/> 非常紧急
+        			<input type="radio"  name="level" value="2"/> 非常紧急
         			&nbsp;&nbsp;&nbsp;&nbsp;
-           			<input type="radio" id="level" name="level" value="1" checked/> 紧急
+           			<input type="radio"  name="level" value="1" checked/> 紧急
         		</c:otherwise>
         	</c:choose>
         </td>
@@ -68,15 +68,15 @@
     	<td class="tableleft">选择学校</td>
     	<td>
     		<select id="schId" name="schId">
-    			<option value="${need.schId }">
+    			<option value="${need.school_id }">
     				<c:forEach items="${schools }" var="sch">
-    					<c:if test="${sch.id == need.schId }">
+    					<c:if test="${sch.id == need.school_id }">
     						${sch.schName}
     					</c:if>
     				</c:forEach>
     			</option>
     			<c:forEach items="${schools }" var="sch">
-    				<option value="${sch.id }">${sch.schName }</option>
+    				<option value="${sch.id }">${sch.school_name }</option>
     			</c:forEach>
     		</select>
     	</td>
@@ -85,8 +85,8 @@
     	<td class="tableleft">详细信息</td>
     	<td>
     		<div>
-		    	<script id="editor" type="text/plain" style="width:800px;height:400px;">
-						 ${need.context}
+		    	<script id="editor" name="info" type="text/plain" style="width:800px;height:400px;">
+						 ${need.info}
 				</script>
 	    	</div>
     	</td>
@@ -95,7 +95,7 @@
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="submit" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
     </tr>
 </table>
@@ -105,50 +105,7 @@
     $(function () {
     	
     	var ue = UE.getEditor('editor');
-    	
-    	$("option").click(function(){
-			$("#schId").removeAttr("size");
-			$("#schId").blur();
-			this.attr("selected","");
-		});
- 
-		$("#schId").focus(function(){
-			$("#schId").attr("size","10");
-		});
-    	
-		$('#backid').click(function(){
-				window.location.href="need/all";
-		 });
 
-		$("#submit-button").click(function(){
-			var id = $("#id").val();
-			var title = $("#title").val();
-			var level = $('input[name="level"]:checked').val();
-			var context = ue.getContent();
-			var schId = $("#schId").val();
-			
-			context = encodeURIComponent(context);
-			
-			var data  = "&title=" + title;
-				data += "&level=" + level;
-				data += "&context=" + context;
-				data += "&schId=" + schId;
-				data += "&id=" + id;
-				
-			$.ajax({
-				url:'need/edit',
-				type:'post',
-				async: true,
-				data:data,
-				success:function(message){
-					alert(message);
-					window.location.href = "need/all";
-				},
-				error:function(){
-					alert('network is error');
-				}
-			});
-		});
     });
 </script>
 </html>
