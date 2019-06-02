@@ -2,7 +2,7 @@
 ____
 
 
-### 知识学习 :heart_eyes:
+## 知识学习 :heart_eyes:
 #### git基本命令
 ```
 git pull        // 同步远程仓库的代码到本地
@@ -23,7 +23,7 @@ git push -u origin [分支名]                   // 将本地数据推送到指�
 #### 导出数据库
     + 导出指定数据库表 `mysqldump -uroot -p [数据库] [数据库表明] > 名字.sql`
 
-#### 需求设计 :relaxed:
+## 需求设计 :relaxed:
 ![image](https://user-images.githubusercontent.com/19285429/58611014-3a112c80-82e0-11e9-9cca-6e1cc671542b.png)
 
     
@@ -69,7 +69,7 @@ ___
     create_user int             // 发布者
 ```
 
-### 项目合并 :scream: :underage: :100:
+## 项目合并 :scream: :underage: :100:
 #### [2019-06-02] 合并
 ![image](https://user-images.githubusercontent.com/19285429/58760508-5f659b00-856b-11e9-8871-05536139ca3d.png)
 
