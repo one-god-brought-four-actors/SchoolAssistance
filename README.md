@@ -1,6 +1,7 @@
-### 校内实训-援助源码base ![team-icon](https://img.shields.io/badge/Java-团队开发-important.svg?style=flat&logo=java) ![study](https://img.shields.io/badge/Mybatis-学习过程-informational.svg)
+### 校内实训-援助源码base ![team-icon](https://img.shields.io/badge/Java-团队开发-important.svg?style=flat&logo=java) ![study](https://img.shields.io/badge/Mybatis-学习过程-informational.svg) ![china](https://jaywcjlove.github.io/sb/lang/chinese.svg)
 ____
 
+:sleeping:
 ### 知识学习
 #### git基本命令
 ```
@@ -16,7 +17,6 @@ git add [文件]                // 添加文件到暂存区
 git commit -m "xxx"         // 将暂存区的文件提交到本地版本库
 git push -u origin [分支名]                   // 将本地数据推送到指定分支
 ```
-
 #### 导入数据库
     + 创建数据库 `create database tendu;`
     + 导入 `mysql -uroot -p tendu < tendu.sql`
