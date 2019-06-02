@@ -38,7 +38,7 @@
 
     </style>
 </head>
-<form action="work/edit" method="post">
+<form action="WorkEditServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">需求编号</td>
@@ -50,33 +50,33 @@
     </tr>
     <tr>
     	<td class="tableleft">学校</td>
-    	<td>${work.schId}</td>
+    	<td>${work.school_id}</td>
     </tr>
     <tr>
     	<td class="tableleft">详细信息</td>
     	<td>
-    		<div>
-		    	<script id="editor" type="text/plain" style="width:800px;height:400px;">
-						 ${work.context}
-				</script>
-	    	</div>
+            <div>
+                <script id="editor" name="info" type="text/plain" style="width:800px; height:300px">
+                    ${work.info}
+                </script>
+            </div>
     	</td>
     </tr>
    
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="submit" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
     </tr>
 </table>
 </form>
 </body>
 <script type="text/javascript">
-    $(function () {
-    	
-    	var ue = UE.getEditor('editor');
-    	
+    var ue = UE.getEditor('editor');
+   /* $(function () {
+
+
 		$('#backid').click(function(){
 				window.location.href="work/all";
 		 });
@@ -110,6 +110,6 @@
 				}
 			});
 		});
-    });
+    });*/
 </script>
 </html>

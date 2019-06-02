@@ -129,6 +129,7 @@ body {
 	function toAdd() {
 		window.location.href = "AdverAddServlet";
     }
+<<<<<<< HEAD
 
     function Del(id) {
 	    var bool = confirm("确认删除？");
@@ -136,5 +137,7 @@ body {
             window.location.href="DelAdverServlet?id="+id;
 		}
     }
+=======
+>>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 </script>
 </html>

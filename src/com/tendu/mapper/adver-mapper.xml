@@ -5,6 +5,7 @@
     <select id="queryAllAdver" resultType="com.tendu.model.Adver">
         select * from advrs
     </select>
+<<<<<<< HEAD
 
     <insert id="insertAdver" parameterType="com.tendu.model.Adver">
         insert into
@@ -28,4 +29,6 @@
     <update id="updateReadNum" parameterType="com.tendu.model.Adver">
         update advrs set hits=#{hits} where id=#{id}
     </update>
+=======
+>>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 </mapper>

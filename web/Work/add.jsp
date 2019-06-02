@@ -35,7 +35,7 @@
         }
     </style>
 </head>
-<form action="work/add" method="post">
+<form action="WorkAddServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td class="tableleft">标题</td>
@@ -45,15 +45,23 @@
     	<td class="tableleft">详细信息</td>
     	<td>
 	    	<div>
-		    	<script id="editor" type="text/plain" style="width:800px;height:400px;"></script>
+		    	<script id="editor" name="info" type="text/plain" style="width:800px;height:400px;"></script>
 	    	</div>
     	</td>
     </tr>
-   
+    <tr>
+        <td class="tableleft">发布学校</td>
+        <td><select id="schId" name="school_id">
+            <c:forEach items="${schoolList }" var="sch">
+                <option value="${sch.id }">${sch.school_name }</option>
+            </c:forEach>
+        </select></td>
+    </tr>
+
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="submit" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
     </tr>
 </table>
