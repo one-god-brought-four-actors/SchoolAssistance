@@ -28,6 +28,10 @@
         <mapper resource="com/tendu/mapper/mybatis-mapper.xml" />
         <mapper resource="com/tendu/mapper/school-mapper.xml" />
         <mapper resource="com/tendu/mapper/need-mapper.xml" />
+<<<<<<< HEAD
+=======
+        <mapper resource="com/tendu/mapper/work-mapper.xml" />
+>>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
         <mapper resource="com/tendu/mapper/adver-mapper.xml" />
         <!--<mapper class="com.tendu.mapper.SchoolMapper" />-->
         <!--<mapper resource="com/tendu/mapper/school-mapper.xml" />-->

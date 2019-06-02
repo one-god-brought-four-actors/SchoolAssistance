@@ -46,12 +46,12 @@
     </tr>
     <tr>
     	<td class="tableleft">学校</td>
-    	<td>${work.schId}</td>
+    	<td>${work.school_id}</td>
     </tr>
     <tr>
     	<td class="tableleft">详细信息</td>
     	<td>
-    		${work.context }
+    		${work.info }
     	</td>
     </tr>
    
@@ -67,7 +67,7 @@
 <script type="text/javascript">
     $(function () {
 		$('#backid').click(function(){
-				window.location.href="work/all";
+				window.location.href="WorkListServlet";
 		 });
     });
 </script>

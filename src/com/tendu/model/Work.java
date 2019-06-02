@@ -1,6 +1,6 @@
 package com.tendu.model;
 
-public class Adver {
+public class Work {
     private int id;
     private String title;
     private int school_id;
@@ -9,11 +9,7 @@ public class Adver {
     private String create_time;
     private int create_user;
 
-<<<<<<< HEAD
-    public Integer getId() {
-=======
     public int getId() {
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
         return id;
     }
 
@@ -37,11 +33,6 @@ public class Adver {
         this.school_id = school_id;
     }
 
-<<<<<<< HEAD
-    public String getInfo() { return info; }
-
-    public void setInfo(String info) { this.info = info; }
-=======
     public String getInfo() {
         return info;
     }
@@ -49,7 +40,6 @@ public class Adver {
     public void setInfo(String info) {
         this.info = info;
     }
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 
     public int getHits() {
         return hits;
@@ -86,5 +76,21 @@ public class Adver {
                 ", create_time='" + create_time + '\'' +
                 ", create_user=" + create_user +
                 '}';
+    }
+
+    public Work() {}
+
+    public Work(String title,String info,Integer id) {
+        this.title = title;
+        this.info = info;
+        this.id = id;
+    }
+
+    public Work(String title,String info,Integer school_id ,String create_time){
+        this.title = title;
+        this.info = info;
+        this.school_id = school_id;
+        this.id = id;
+        this.create_time = create_time;
     }
 }
