@@ -87,7 +87,7 @@
 			},		
       		{text:'招聘管理',
 	  			items:[
-	  				{id:'1',text:'人才引进',href:'Adver/index.jsp'},
+	  				{id:'1',text:'人才引进',href:'AdverListServlet'},
 	  			]
       		}
 		]},

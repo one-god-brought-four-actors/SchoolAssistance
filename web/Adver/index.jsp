@@ -45,7 +45,7 @@ body {
 			class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
 		<button type="submit" class="btn btn-primary">查询</button>
 		&nbsp;&nbsp;
-		<button type="button" class="btn btn-success" id="addnew">新增需求</button>
+		<button type="button" onclick="toAdd()" class="btn btn-success" id="addnew">新增需求</button>
 	</form>
 	<table class="table table-bordered table-hover definewidth m10">
 		<thead>
@@ -63,21 +63,21 @@ body {
 		<tr>
 			<td>${s.id }</td>
 			<td style="max-width: 220px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-				<a title="点击查看详情" href="${pageContext.request.contextPath }/adver/toShow/${s.id }">${s.title }</a>
+				${s.title }
 			</td>
 			<td style="max-width: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-				${s.schId }
+				${s.school_id }
 			</td>
-			<td>${s.readNum }</td>
+			<td>${s.hits }</td>
 			<td>
 				
-			${s.updateTime }
+			${s.create_time }
 			</td>
-			<td>${s.createUser }</td>
+			<td>${s.create_user }</td>
 			<td>
-				 <a class="option-button" href="${pageContext.request.contextPath }/adver/toEdit/${s.id }">编辑</a>
-				|<a class="option-button" onclick="del(${s.id});">删除</a>
-				|<a class="option-button" href="${pageContext.request.contextPath }/adver/toShow/${s.id }">查看</a>
+				 <a class="option-button" href="AdverEditServlet?id=${s.id }">编辑</a>
+				|<a style="cursor: pointer" class="option-button" onclick="Del(${s.id})">删除</a>
+				|<a class="option-button" href="AdverInfoServlet?id=${s.id }">查看</a>
 			</td>
 		</tr>
 		</c:forEach>
@@ -126,29 +126,15 @@ body {
 	</div>
 </body>
 <script>
-    $(function () {
-		$('#addnew').click(function(){
-				window.location.href="adver/toAdd";
-		 });
-    });
+	function toAdd() {
+		window.location.href = "AdverAddServlet";
+    }
 
-	function del(id)
-	{
-		if(confirm("确定要删除吗？"))
-		{
-			$.ajax({
-				url:"adver/del/" + id,
-				async: true,
-				type: "post",
-				success: function(result){
-					alert(result);
-					window.location.href = "adver/all";
-				},
-				error: function(){
-					alert("netword is error");
-				}
-			});		
+    function Del(id) {
+	    var bool = confirm("确认删除？");
+	    if (bool) {
+            window.location.href="DelAdverServlet?id="+id;
 		}
-	}
+    }
 </script>
 </html>
