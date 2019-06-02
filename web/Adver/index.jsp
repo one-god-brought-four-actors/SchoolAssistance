@@ -45,7 +45,7 @@ body {
 			class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
 		<button type="submit" class="btn btn-primary">查询</button>
 		&nbsp;&nbsp;
-		<button type="button" class="btn btn-success" id="addnew">新增需求</button>
+		<button type="button" onclick="toAdd()" class="btn btn-success" id="addnew">新增需求</button>
 	</form>
 	<table class="table table-bordered table-hover definewidth m10">
 		<thead>
@@ -126,29 +126,8 @@ body {
 	</div>
 </body>
 <script>
-    $(function () {
-		$('#addnew').click(function(){
-				window.location.href="adver/toAdd";
-		 });
-    });
-
-	function del(id)
-	{
-		if(confirm("确定要删除吗？"))
-		{
-			$.ajax({
-				url:"adver/del/" + id,
-				async: true,
-				type: "post",
-				success: function(result){
-					alert(result);
-					window.location.href = "adver/all";
-				},
-				error: function(){
-					alert("netword is error");
-				}
-			});		
-		}
-	}
+	function toAdd() {
+		window.location.href = "AdverAddServlet";
+    }
 </script>
 </html>

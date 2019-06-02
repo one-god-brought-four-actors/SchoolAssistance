@@ -66,15 +66,15 @@ body {
 				<a title="点击查看详情" href="${pageContext.request.contextPath }/work/toShow/${s.id }">${s.title }</a>
 			</td>
 			<td style="max-width: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-				${s.schId }
+				${s.school_id }
 			</td>
-			<td>${s.readNum }</td>
-			<td>${s.uptateTime }</td>
-			<td>${s.createUser }</td>
+			<td>${s.hits }</td>
+			<td>${s.create_time }</td>
+			<td>${s.create_user }</td>
 			<td>
-				 <a class="option-button" href="${pageContext.request.contextPath }/work/toEdit/${s.id }">编辑</a>
+				 <a class="option-button" href="WorkEditServlet?id=${s.id }">编辑</a>
 				|<a class="option-button" onclick="del(${s.id});">删除</a>
-				|<a class="option-button" href="${pageContext.request.contextPath }/work/toShow/${s.id }">查看</a>
+				|<a class="option-button" href="WorkInfoServlet?id=${s.id }">查看</a>
 			</td>
 		</tr>
 		</c:forEach>
@@ -125,7 +125,7 @@ body {
 <script>
     $(function () {
 		$('#addnew').click(function(){
-				window.location.href="work/toAdd";
+				window.location.href="WorkAddServlet";
 		 });
     });
 
@@ -134,12 +134,12 @@ body {
 		if(confirm("确定要删除吗？"))
 		{
 			$.ajax({
-				url:"work/del/" + id,
+				url:"DeleteWorkServlet?id=" + id,
 				async: true,
-				type: "post",
+				type: "get",
 				success: function(result){
-					alert(result);
-					window.location.href = "work/all";
+					alert("成功");
+					window.location.href = "WorkListServlet";
 				},
 				error: function(){
 					alert("netword is error");

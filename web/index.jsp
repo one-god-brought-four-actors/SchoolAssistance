@@ -84,10 +84,15 @@
 				items:[
 					{id:'1',text:'需求管理',href:'NeedListServlet'},
 				]
-			},		
+			},
+            {text:'援藏工作',
+                items:[
+                        {id:'1',text:'工作动态',href:'WorkListServlet'},
+                 ]
+            },
       		{text:'招聘管理',
 	  			items:[
-	  				{id:'1',text:'人才引进',href:'Adver/index.jsp'},
+	  				{id:'1',text:'人才引进',href:'AdverListServlet'},
 	  			]
       		}
 		]},

@@ -1,8 +1,7 @@
 package com.tendu.servlet;
 
-
-import com.tendu.mapper.NeedMapper;
-import com.tendu.model.Need;
+import com.tendu.mapper.SchoolMapper;
+import com.tendu.model.School;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
 
@@ -14,20 +13,18 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/NeedListServlet")
-public class NeedListServlet extends HttpServlet {
+@WebServlet("/AdverAddServlet")
+public class AdverAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 查询数据库中所有需求的信息
         SqlSession session = DBTools.getSession();
-        NeedMapper needMapper = session.getMapper(NeedMapper.class);
-
-        List<Need> list = needMapper.queryAll();
-        request.setAttribute("needs", list);
+        SchoolMapper schoolMapper = session.getMapper(SchoolMapper.class);
+        List<School> list = schoolMapper.queryAllSchool();
+        request.setAttribute("schools",list);
         session.close();
-        request.getRequestDispatcher("Need/index.jsp").forward(request, response);
+        request.getRequestDispatcher("Adver/add.jsp").forward(request, response);
     }
 }

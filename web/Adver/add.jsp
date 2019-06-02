@@ -46,18 +46,14 @@
     	<td>
     		<select id="schId" name="schId">
     			<c:forEach items="${schools }" var="sch">
-    				<option value="${sch.id }">${sch.schName }</option>
+    				<option value="${sch.id }">${sch.schoolName }</option>
     			</c:forEach>
     		</select>
     	</td>
     </tr>
     <tr>
     	<td class="tableleft">详细信息</td>
-    	<td>
-	    	<div>
-		    	<script id="editor" type="text/plain" style="width:800px;height:400px;"></script>
-	    	</div>
-    	</td>
+    	<td><script id="editor" type="text/plain" style="width:800px;height:400px;"></script></td>
     </tr>
    
     <tr>
@@ -69,55 +65,5 @@
 </table>
 </form>
 </body>
-<script type="text/javascript">
-
-    $(function () {
-    	
-    	var ue = UE.getEditor('editor'); 
-    	
-    	
-    	
-    	$("option").click(function(){
-			$("#schId").removeAttr("size");
-			$("#schId").blur();
-			this.attr("selected","");
-		});
- 
-		$("#schId").focus(function(){
-			$("#schId").attr("size","10");
-		});
-    	
-		$('#backid').click(function(){
-				window.location.href="adver/all";
-		 });
-
-		$("#submit-button").click(function(){
-			
-			var title = $("#title").val();
-			var schId = $("#schId").val();
-			var context = ue.getContent();
-			
-			/* 文本转义防止出现丢失 */
-			context = encodeURIComponent(context);
-			
-			var data  = "&title=" + title;
-				data += "&context=" + context;
-				data += "&schId=" + schId;
-				
-			$.ajax({
-				url:'adver/add',
-				type:'post',
-				async: true,
-				data:data,
-				success:function(message){
-					alert(message);
-					window.location.href = "adver/all";
-				},
-				error:function(){
-					alert('network is error');
-				}
-			});
-		});
-    });
-</script>
+<script type="text/javascript"></script>
 </html>
