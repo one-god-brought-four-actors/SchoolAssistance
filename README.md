@@ -1,4 +1,4 @@
-### 校内实训-援助源码base ![team-icon](https://img.shields.io/badge/-团队开发-important.svg) ![study](https://img.shields.io/badge/-学习过程-informational.svg)
+### 校内实训-援助源码base ![team-icon](https://img.shields.io/badge/Java-团队开发-important.svg?style=flat&logo=java) ![study](https://img.shields.io/badge/Mybatis-学习过程-informational.svg)
 ____
 
 ### 知识学习
