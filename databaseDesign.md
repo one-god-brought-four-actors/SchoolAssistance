@@ -15,6 +15,7 @@ ___
     create_user varchar(64)             // 发布者
 ```
 
+
 * 工作动态(Work)
 ```
 表名: works

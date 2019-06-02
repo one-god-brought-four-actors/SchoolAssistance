@@ -25,10 +25,10 @@
           (#{title}, #{risk_level}, #{school_id}, #{info}, #{create_time})
     </insert>
 
-    <!--<update id="updateUser" parameterType="com.tendu.model.User">-->
-        <!--update users-->
-        <!--set username=#{username}, password=#{password}, phone=#{phone}, level=#{level}-->
-        <!--where id=#{id}-->
-    <!--</update>-->
+    <update id="update" parameterType="com.tendu.model.Need">
+        update needs
+        set title=#{title}, risk_level=#{risk_level}, school_id=#{school_id}, info=#{info}
+        where id=#{id}
+    </update>
 
 </mapper>

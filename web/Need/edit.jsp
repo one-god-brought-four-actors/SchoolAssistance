@@ -71,7 +71,7 @@
     			<option value="${need.school_id }">
     				<c:forEach items="${schools }" var="sch">
     					<c:if test="${sch.id == need.school_id }">
-    						${sch.schName}
+    						${sch.school_name}
     					</c:if>
     				</c:forEach>
     			</option>
