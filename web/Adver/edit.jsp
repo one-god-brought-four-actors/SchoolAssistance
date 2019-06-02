@@ -38,7 +38,7 @@
 
     </style>
 </head>
-<form action="adver/edit" method="post">
+<form action="AdverEditServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">需求编号</td>
@@ -50,14 +50,14 @@
     </tr>
     <tr>
     	<td class="tableleft">学校</td>
-    	<td>${adver.schId}</td>
+    	<td>${adver.school_id}</td>
     </tr>
     <tr>
     	<td class="tableleft">详细信息</td>
     	<td>
     		<div>
 		    	<script id="editor" type="text/plain" style="width:800px;height:400px;">
-						 ${adver.context}
+						 ${adver.info}
 				</script>
 	    	</div>
     	</td>
@@ -66,7 +66,8 @@
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="button" id="submit-button" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+             <button type="button" class="btn btn-success" onclick="back()">返回列表</button>
         </td>
     </tr>
 </table>
@@ -74,42 +75,38 @@
 </body>
 <script type="text/javascript">
     $(function () {
-    	
-    	var ue = UE.getEditor('editor');
-    	
-		$('#backid').click(function(){
-				window.location.href="adver/all";
-		 });
+        var ue = UE.getEditor('editor');
 
-		$("#submit-button").click(function(){
-			var id = $("#id").val();
-			var title = $("#title").val();
-			var context = ue.getContent();
-			
-			context = encodeURIComponent(context);
-			
-			var data  = "id=" + id;
-				data += "&title=" + title;
-				data += "&context=" + context;
-				
-				
-				
-				console.log(context);
-				
-			$.ajax({
-				url:'adver/edit',
-				type:'post',
-				async: true,
-				data:data,
-				success:function(message){
-					alert(message);
-					window.location.href = "adver/all";
-				},
-				error:function(){
-					alert('network is error');
-				}
-			});
-		});
+        $("#submit-button").click(function(){
+            var id = $("#id").val();
+            var title = $("#title").val();
+            var message = ue.getContent();
+            /* 文本转义防止出现丢失 */
+            // message = encodeURIComponent(message);
+
+            $.ajax({
+                url:'AdverEditServlet',
+                type:'post',
+                async: true,
+                data: {
+                    id: id,
+                    title: title,
+                    message: message
+                },
+                success:function(message){
+                    alert("修改成功");
+                    window.location.href = "AdverListServlet";
+                },
+                error:function(){
+
+                    alert('network is error');
+                }
+            });
+        });
     });
+    function back() {
+        window.location.href="AdverListServlet";
+    }
 </script>
+
 </html>

@@ -46,19 +46,20 @@
     </tr>
     <tr>
     	<td class="tableleft">学校</td>
-    	<td>${adver.schId}</td>
+    	<td>${adver.school_id}</td>
     </tr>
     <tr>
     	<td class="tableleft">详细信息</td>
     	<td>
-    		${adver.context }
+    		${adver.info }
     	</td>
     </tr>
    
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="button" class="btn btn-success"  id="submit-button">返回列表</button>
+
         </td>
     </tr>
 </table>
@@ -66,9 +67,29 @@
 </body>
 <script type="text/javascript">
     $(function () {
-		$('#backid').click(function(){
-				window.location.href="adver/all";
-		 });
+        $("#submit-button").click(function(){
+            var readNum =${adver.hits};
+            readNum++;
+            var id = ${adver.id };
+            /* 文本转义防止出现丢失 */
+            // message = encodeURIComponent(message);
+
+            $.ajax({
+                url:'AdverInfoServlet',
+                type:'post',
+                async: true,
+                data: {
+                    id: id,
+                    readNum:readNum
+                },
+                success:function(message){
+                    window.location.href = "AdverListServlet";
+                },
+                error:function(){
+                    alert('network is error');
+                }
+            });
+        });
     });
 </script>
 </html>
