@@ -85,10 +85,7 @@
 <script type="text/javascript">
     $(function () {   
     	var ue = UE.getEditor('editor'); 
-    	
-		$('#backid').click(function(){
-				window.location.href="school/all";
-		 });
+
 
 		$("#submit-button").click(function(){
 			var schName = $("#schName").val();

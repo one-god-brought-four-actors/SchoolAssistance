@@ -191,7 +191,7 @@ UE.I18N['zh-cn'] = {
         'copy':"复制(Ctrl + c)",
         'copymsg': "浏览器不支持,请使用 'Ctrl + c'",
         'paste':"粘贴(Ctrl + v)",
-        'pastemsg': "浏览器不支持,请使用 'Ctrl + v'"
+         'pastemsg': "浏览器不支持,请使用 'Ctrl + v'"
     },
     'copymsg': "浏览器不支持,请使用 'Ctrl + c'",
     'pastemsg': "浏览器不支持,请使用 'Ctrl + v'",
@@ -667,3 +667,4 @@ UE.I18N['zh-cn'] = {
         'success':'本地保存成功'
     }
 };
+
