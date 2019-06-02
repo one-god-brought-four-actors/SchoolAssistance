@@ -31,15 +31,17 @@
             <li><a href="index/adverindex.jsp">人员招聘</a></li>
         </ul>
         <!--登陆-->
-        
-        <c:choose>
-			<c:when  test="${manager == null}">
-		        <a href="login.html" class="login"><!--<span></span>-->登陆</a>
-			</c:when>
-			<c:otherwise>
-				欢迎您：${manager.userName}<a href="index.jsp" class="login"><!--<span></span>-->前往后台</a>
-			</c:otherwise>    
-		</c:choose>
+
+        <div class="" style="color: white;display: inline-block;width: auto;line-height: 100px;">
+            <c:choose>
+                <c:when  test="${user == null}">
+                    <a href="login.html" class="login"><!--<span></span>-->登陆</a>
+                </c:when>
+                <c:otherwise>
+                    欢迎您：${user.username}<a href="index.jsp" class="login"><!--<span></span>-->前往后台</a>
+                </c:otherwise>
+            </c:choose>
+        </div>
 		
     </div>
 </header>

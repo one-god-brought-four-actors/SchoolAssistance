@@ -17,13 +17,13 @@
         	<div class="login-box">
                 <div id="logo"></div>
                 <h1></h1>
-                <div class="input username" id="username">
-                    <label for="userName">用户名</label>
-                    <input type="text" id="userName" />
+                <div class="input username" id="uname">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" />
                 </div>
                 <div class="input psw" id="psw">
                     <label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
-                    <input type="password" id="passWord" />
+                    <input type="password" id="password" />
                 </div>
                 
                 <!-- 
@@ -34,7 +34,7 @@
                 </div>
                  -->
                 <div id="btn" class="loginButton" style="margin-left: -264px;">
-                    <input type="button"  id="valiDate" class="button" value="登录"  />
+                    <input type="button"  id="valiDate" onclick="login()" class="button" value="登录"  />
                 </div>
             </div>
         <div id="ft">CopyRight&nbsp;2018&nbsp;&nbsp;版权所有&nbsp;&nbsp;More Templates <a href="#" target="_blank" title="达内科技">达内科技</a></div>
@@ -45,9 +45,6 @@
 
 </body>
 <script type="text/javascript">
-
-	
-
 
 	var height = $(window).height() > 445 ? $(window).height() : 445;
 	$("#container").height(height);
@@ -61,39 +58,38 @@
     });
 	$('select').select();
 	
-	$('.loginButton').click(function(e) {
-        var userName = $("#userName").val();
-        var passWord = $("#passWord").val();
-        
-        if(!userName){
-        	alert("用户名不能为空");
-        	return;
-        }
-        if(!passWord){
-        	alert("密码不能为空");
-        	return;
-        }
-        
-        var data = "userName=" + userName + "&passWord=" + passWord;
-        
-        $.ajax({
-        	url:"manager/login",
-        	async: true,
-        	type: 'post',
-        	data: data,
-        	success: function(message){
-        		if(message.indexOf("success") < 0){
-        			alert(message);
-        		} else {
-        			window.location.href = "main.jsp";
-        		}
-        	},
-        	error: function(){
-        		alert("network is error");
-        	}
-        });
-        
-    });
+	function login(){
+		var username = $("#username").val();
+		var password = $("#password").val();
+		
+		// key=value&key1=value
+		
+		var param = "username=" + username +"&password=" + password;
+		
+		console.log(param);
+		
+		$.ajax({
+			url: 'UserLoginServlet',
+			type: 'post',
+			async: true,
+			data: param,
+			success: function(res){
+				console.log(res);
+				// 请求成功的回调函数，返回的结果会作为success方法的参数传入
+				if(res == "登录成功"){
+					window.location.href = "main.jsp";
+				} else {
+					alert(res);
+				}
+			},
+			error: function(res){
+				alert("登陆失败，请稍后再试！");
+			}
+		});
+		
+	}
+	
+	
 </script>
 
 </html>
