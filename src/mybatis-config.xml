@@ -17,7 +17,7 @@
                 <property name="driver" value="com.mysql.cj.jdbc.Driver" />
                 <property name="url" value="jdbc:mysql://127.0.0.1:3306/tendu?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
                 <property name="username" value="root" />
-                <property name="password" value="root" />
+                <property name="password" value="zjmxp" />
 
             </dataSource>
         </environment>
@@ -28,10 +28,7 @@
         <mapper resource="com/tendu/mapper/mybatis-mapper.xml" />
         <mapper resource="com/tendu/mapper/school-mapper.xml" />
         <mapper resource="com/tendu/mapper/need-mapper.xml" />
-<<<<<<< HEAD
-=======
         <mapper resource="com/tendu/mapper/work-mapper.xml" />
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
         <mapper resource="com/tendu/mapper/adver-mapper.xml" />
         <!--<mapper class="com.tendu.mapper.SchoolMapper" />-->
         <!--<mapper resource="com/tendu/mapper/school-mapper.xml" />-->

@@ -61,7 +61,7 @@
     </tr>
     <tr>
     	<td class="tableleft">级别</td>
-    	<td>${manager.level }</select>
+        <td><select>${manager.level }</select>
     	</td>
     </tr>
     <tr>

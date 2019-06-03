@@ -9,11 +9,7 @@ public class Adver {
     private String create_time;
     private int create_user;
 
-<<<<<<< HEAD
     public Integer getId() {
-=======
-    public int getId() {
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
         return id;
     }
 
@@ -37,11 +33,6 @@ public class Adver {
         this.school_id = school_id;
     }
 
-<<<<<<< HEAD
-    public String getInfo() { return info; }
-
-    public void setInfo(String info) { this.info = info; }
-=======
     public String getInfo() {
         return info;
     }
@@ -49,7 +40,6 @@ public class Adver {
     public void setInfo(String info) {
         this.info = info;
     }
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 
     public int getHits() {
         return hits;

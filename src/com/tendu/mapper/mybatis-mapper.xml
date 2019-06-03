@@ -31,4 +31,12 @@
         where id=#{id}
     </update>
 
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.User">
+        select * from users limit #{start}, #{maxRow}
+    </select>
+    
+    <select id="getCountUser" resultType="java.lang.Integer">
+        select count(*) from users
+    </select>
+
 </mapper>

@@ -1,12 +1,12 @@
 package com.tendu.servlet;
 
-<<<<<<< HEAD
+
 import com.tendu.mapper.AdverMapper;
 import com.tendu.mapper.SchoolMapper;
 import com.tendu.model.Adver;
-=======
+
 import com.tendu.mapper.SchoolMapper;
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
+
 import com.tendu.model.School;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
@@ -17,18 +17,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-<<<<<<< HEAD
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-=======
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
+
 import java.util.List;
 
 @WebServlet("/AdverAddServlet")
 public class AdverAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
+
         //转码UTF-8防止中文乱码
         request.setCharacterEncoding("UTF-8");
         //获取数据
@@ -54,9 +53,7 @@ public class AdverAddServlet extends HttpServlet {
         session.close();
 
         response.sendRedirect("AdverListServlet");
-=======
 
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

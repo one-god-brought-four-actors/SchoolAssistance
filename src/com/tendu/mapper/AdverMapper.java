@@ -6,7 +6,6 @@ import java.util.List;
 
 public interface AdverMapper {
     List<Adver> queryAllAdver();
-<<<<<<< HEAD
 
     Integer insertAdver(Adver adver);
 
@@ -17,6 +16,4 @@ public interface AdverMapper {
     int DelAdver(int id);
 
     int updateReadNum(Adver adver);
-=======
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 }

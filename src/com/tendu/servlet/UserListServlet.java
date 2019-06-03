@@ -1,6 +1,7 @@
 package com.tendu.servlet;
 
 import com.tendu.mapper.UserMapper;
+import com.tendu.model.Page;
 import com.tendu.model.User;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
@@ -23,9 +24,22 @@ public class UserListServlet extends HttpServlet {
         SqlSession session = DBTools.getSession();
         UserMapper userMapper = session.getMapper(UserMapper.class);
 
-        List<User> list = userMapper.queryAll();
-        System.out.println(list);
+        String index = request.getParameter("index");
+
+        if(index == null || "".equals(index)){
+            index = "1";
+        }
+
+        Page page = new Page();
+
+        Integer count = userMapper.getCountUser();
+        page.setTotalRow(count);
+        page.setIndex(Integer.parseInt(index));
+
+        List<User> list = userMapper.queryByPage(page);
+
         request.setAttribute("users", list);
+        request.setAttribute("page", page);
         session.close();
         request.getRequestDispatcher("User/index.jsp").forward(request, response);
     }

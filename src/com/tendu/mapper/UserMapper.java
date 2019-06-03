@@ -1,4 +1,5 @@
 package com.tendu.mapper;
+import com.tendu.model.Page;
 import com.tendu.model.User;
 
 import java.util.List;
@@ -15,4 +16,8 @@ public interface UserMapper {
     Integer insertUser(User user);
 
     Integer updateUser(User user);
+
+    List<User> queryByPage(Page page);
+
+    Integer getCountUser();
 }
