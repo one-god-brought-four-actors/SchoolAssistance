@@ -105,7 +105,9 @@
     $(function () {
     	
     	var ue = UE.getEditor('editor');
-
+		$('#backid').click(function(){
+			window.location.href="NeedListServlet";
+		});
     });
 </script>
 </html>
