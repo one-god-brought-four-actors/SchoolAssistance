@@ -31,4 +31,11 @@
         where id=#{id}
     </update>
 
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.Need">
+        select * from needs limit #{start}, #{maxRow}
+    </select>
+
+    <select id="getCountNeed" resultType="java.lang.Integer">
+        select count(*) from needs
+    </select>
 </mapper>

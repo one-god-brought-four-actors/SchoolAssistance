@@ -87,44 +87,35 @@ body {
 		</c:forEach>
 	</table>
 	<div class="inline pull-right page">
-		${total } 条记录 ${page.page }/${page.totalPage } 页 
+		${page.getTotalRow() } 条记录 ${page.index }/${page.getTotalPage() } 页
 		<c:choose>
-			<c:when test="${page.page == 1 }">
+			<c:when test="${page.index == 1 }">
 			</c:when>
 			<c:otherwise>
-				<a href='need/all'>首页</a>
-				<a href='need/all?page= ${page.page - 1 }'>上一页</a>
+				<a href='NeedListServlet?index=1'>首页</a>
+				<a href='NeedListServlet?index=${page.index - 1}'>上一页</a>
 			</c:otherwise>
 		</c:choose>
-		
-		<c:if test="${page.page - 3 > 0}">
-			<a href='need/all?page= ${page.page - 3 }'>${page.page - 3 }</a>
-		</c:if>
-		<c:if test="${page.page - 2 > 0}">
-			<a href='need/all?page= ${page.page - 2 }'>${page.page - 2 }</a>
-		</c:if>
-		<c:if test="${page.page - 1 > 0}">
-			<a href='need/all?page= ${page.page - 1 }'>${page.page - 1 }</a>
-		</c:if>
-		
-		<span class='current'>${page.page }</span>
-		
-		<c:if test="${page.page + 1 <= page.totalPage}">
-			<a href='need/all?page= ${page.page + 1 }'>${page.page + 1 }</a>
-		</c:if>
-		<c:if test="${page.page + 2 <= page.totalPage}">
-			<a href='need/all?page= ${page.page + 2 }'>${page.page + 2 }</a>
-		</c:if>
-		<c:if test="${page.page + 3 <= page.totalPage}">
-			<a href='need/all?page= ${page.page + 3 }'>${page.page + 3 }</a>
-		</c:if>
-		
+
+		<%--循环页数--%>
+		<c:forEach var="p" begin="1" end="${page.getTotalPage() }">
+			<c:choose>
+				<c:when test="${p == page.index }">
+					<span class='current'>${p }</span>
+				</c:when>
+				<c:otherwise>
+					<a href="NeedListServlet?index=${p }">${p }</a>
+				</c:otherwise>
+			</c:choose>
+		</c:forEach>
+
+
 		<c:choose>
-			<c:when test="${page.page == page.totalPage }">
+			<c:when test="${page.index == page.getTotalPage() }">
 			</c:when>
 			<c:otherwise>
-				<a href='need/all?page= ${page.page + 1 }'>下一页</a>
-				<a href='need/all?page=${page.totalPage }'>尾页</a>
+				<a href='NeedListServlet?index=${page.index + 1 }'>下一页</a>
+				<a href='NeedListServlet?index=${page.getTotalPage() }'>尾页</a>
 			</c:otherwise>
 		</c:choose>
 	</div>
