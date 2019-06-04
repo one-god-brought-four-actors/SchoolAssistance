@@ -29,14 +29,9 @@ public class NeedShowServlet extends HttpServlet {
         List<Need> list = needMapper.queryById(id);
         List<Need> needList = needMapper.queryAll();
 
-        SqlSession session2 = DBTools.getSession();
-        SchoolMapper schoolMapper = session2.getMapper(SchoolMapper.class);
-        List<School> list2 = schoolMapper.queryAllSchool();
-
 
         request.setAttribute("need", list.get(0));
         request.setAttribute("needs", needList);
-        request.setAttribute("schools",list2);
         session.close();
         request.getRequestDispatcher("index/needshow.jsp").forward(request, response);
     }

@@ -23,6 +23,11 @@
             content:"<";
             font-size: 40px;
         }
+        .myuser{
+            color: #fff;
+            margin-top: 14px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -69,10 +74,24 @@
                     <img src="index/image/recruit.png" >人员招聘
                 </a>
             </li>
-            <li>
+
                 <!--登陆-->
-                <a style="color: #247ba8;" class="login" href="login.html" >登陆</a>
-            </li>
+                <c:choose>
+                    <c:when test="${user !=null }">
+                        <li>
+                            <span class="myuser">欢迎您,sdasd</span>
+                        </li>
+                        <li>
+                            <a style="color: #247ba8;" class="login" href="index.jsp" >前往后台</a>
+                        </li>
+
+                    </c:when>
+                    <c:otherwise>
+                        <li>
+                            <a style="color: #247ba8;" class="login" href="login.html" >登陆</a>
+                        </li>
+                    </c:otherwise>
+                </c:choose>
         </ul>
 
 
