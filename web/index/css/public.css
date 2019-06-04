@@ -2,18 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	text-decoration: none;
 }
-ul,ol{list-style: none}
+ul,ol{list-style: none;    margin:0  0 0px 0px;}
 a{text-decoration: none}
 .content{
     width: 1000px;
-    margin: 0 auto;
+    margin:  auto;
 }
 footer{
     height: 200px;
     background: url("../image/ext2.bmp") repeat-x 0 0;
+    text-align: center;
+    padding-top: 40px;
 }
-footer>div{
-    background: url("../image/footer.jpg") no-repeat center;
-    height: 200px;
+footer>div>div{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-blue{
+    width: 100px;
+    height: 80px;
+    text-align: right;
+}
+.footerContent{
+    width: 500px;
+    text-align: center;
+}
+.footerContent>p{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+.QrCode{
+    width: 120px;
+    height: 100px;
 }

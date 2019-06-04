@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisGeneratorConfiguration">
+    <option name="credentials">
+      <map>
+        <entry key="jdbc:mysql://localhost:3306/tendu">
+          <value>
+            <Credential>
+              <option name="username" value="root" />
+            </Credential>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableConfigs">
+      <map>
+        <entry key="policys">
+          <value>
+            <TableConfig>
+              <option name="basePackage" value="com.tendu.mapper" />
+              <option name="comment" value="true" />
+              <option name="domainName" value="Policys" />
+              <option name="domainPackage" value="com.tendu.mapper" />
+              <option name="exampleName" value="PolicysExample" />
+              <option name="examplePackage" value="com.tendu.mapper.example" />
+              <option name="examplePostfix" value="Example" />
+              <option name="mapperName" value="PolicysMapper" />
+              <option name="mapperPackage" value="com.tendu.mapper" />
+              <option name="mapperPostfix" value="Mapper" />
+              <option name="moduleRootPath" value="$PROJECT_DIR$" />
+              <option name="mysql8" value="true" />
+              <option name="name" value="policys" />
+              <option name="override" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="resourcePath" value="src/main/resources" />
+              <option name="sourcePath" value="src/main/java" />
+              <option name="tableName" value="policys" />
+              <option name="xmlPackage" value="mapper" />
+            </TableConfig>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

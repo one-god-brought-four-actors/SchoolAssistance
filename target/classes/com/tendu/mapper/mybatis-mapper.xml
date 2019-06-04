@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tendu.mapper.UserMapper">
+    <select id="queryUserName" parameterType="java.lang.String" resultType="com.tendu.model.User">
+      select * from users where username=#{username}
+    </select>
+
+    <select id="queryUserById" parameterType="java.lang.Integer" resultType="com.tendu.model.User">
+        select * from users where id=#{id}
+    </select>
+
+    <select id="queryAll" resultType="com.tendu.model.User">
+        select * from users
+    </select>
+
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from users where id=#{id};
+    </delete>
+
+    <insert id="insertUser" parameterType="com.tendu.model.User">
+        insert into
+          users(username, password, schoolId, phone, level, create_time)
+        values
+          (#{username}, #{password}, #{schoolId}, #{phone}, ${level}, #{create_time})
+    </insert>
+
+    <update id="updateUser" parameterType="com.tendu.model.User">
+        update users
+        set username=#{username}, password=#{password}, phone=#{phone}, level=#{level}
+        where id=#{id}
+    </update>
+
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.User">
+        select * from users limit #{start}, #{maxRow}
+    </select>
+    
+    <select id="getCountUser" resultType="java.lang.Integer">
+        select count(*) from users
+    </select>
+
+</mapper>

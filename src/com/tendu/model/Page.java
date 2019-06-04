@@ -52,7 +52,7 @@ public class Page {
     }
 
     public List<Integer> pageList(){
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
 
         // 取当前页附近两个
         // 如果index <= 0

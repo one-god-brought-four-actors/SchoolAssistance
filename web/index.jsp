@@ -82,14 +82,11 @@
 			},
 			{text:'援藏工作',
 				items:[
-					{id:'1',text:'需求管理',href:'NeedListServlet'},
+                    {id:'1',text:'需求管理',href:'NeedListServlet'},
+                    {id:'2',text:'政策发布',href:'PolicyListServlet'}
+
 				]
 			},
-            {text:'援藏工作',
-                items:[
-                        {id:'1',text:'工作动态',href:'WorkListServlet'},
-                 ]
-            },
       		{text:'招聘管理',
 	  			items:[
 	  				{id:'1',text:'人才引进',href:'AdverListServlet'},
