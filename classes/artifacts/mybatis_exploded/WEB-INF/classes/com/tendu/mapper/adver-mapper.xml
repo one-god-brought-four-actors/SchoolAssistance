@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tendu.mapper.AdverMapper">
+    <select id="queryAllAdver" resultType="com.tendu.model.Adver">
+        select * from advrs
+    </select>
+
+    <insert id="insertAdver" parameterType="com.tendu.model.Adver">
+        insert into
+        advrs(title,school_id,info,create_time)
+        values
+        (#{title}, #{school_id}, #{info}, #{create_time})
+    </insert>
+
+    <update id="updateAdver" parameterType="com.tendu.model.Adver">
+        update advrs set title = #{title}, info = #{info}, create_time = #{create_time} where id = #{id}
+    </update>
+
+    <select id="selectAdverById" parameterType="java.lang.Integer" resultType="com.tendu.model.Adver">
+        select * from advrs where id=#{id}
+    </select>
+
+    <delete id="DelAdver" parameterType="java.lang.Integer">
+        delete from advrs where id=#{id}
+    </delete>
+
+    <update id="updateReadNum" parameterType="com.tendu.model.Adver">
+        update advrs set hits=#{hits} where id=#{id}
+    </update>
+</mapper>
