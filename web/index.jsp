@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%--<%@page import="com.tendu.model.Auth" %>--%>
+<%--<% if (!Auth.is_login(request)) response.sendRedirect("login.html");%>--%>
+<% if(request.getAttribute("user") == null) response.sendRedirect("login.html"); %>
     
 <!DOCTYPE HTML>
 <html>
