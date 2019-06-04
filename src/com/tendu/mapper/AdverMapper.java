@@ -1,6 +1,7 @@
 package com.tendu.mapper;
 
 import com.tendu.model.Adver;
+import com.tendu.model.Page;
 
 import java.util.List;
 
@@ -15,5 +16,7 @@ public interface AdverMapper {
 
     int DelAdver(int id);
 
-    int updateReadNum(Adver adver);
+    Integer getCountAdver();
+
+    List<Adver> queryByPage(Page page);
 }

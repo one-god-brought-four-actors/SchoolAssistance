@@ -3,7 +3,6 @@ package com.tendu.servlet;
 import com.tendu.mapper.AdverMapper;
 import com.tendu.model.Adver;
 import com.tendu.model.Page;
-import com.tendu.model.Auth;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
 
@@ -14,18 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
-@WebServlet("/AdverListServlet")
-public class AdverListServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
-    }
-
+@WebServlet("/AdverIndexServlet")
+public class AdverIndexServlet extends HttpServlet {
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 登陆认证
-        Auth.is_login(request, response, "login.html");
-
-
         // 查询数据库中所有管理员的信息
         SqlSession session = DBTools.getSession();
         AdverMapper adverMapper = session.getMapper(AdverMapper.class);
@@ -43,10 +34,16 @@ public class AdverListServlet extends HttpServlet {
         page.setIndex(Integer.parseInt(index));
 
         List<Adver> list = adverMapper.queryByPage(page);
+        System.out.println(list);
 
         request.setAttribute("advers", list);
         request.setAttribute("page", page);
         session.close();
-        request.getRequestDispatcher("Adver/index.jsp").forward(request, response);
+        request.getRequestDispatcher("index/adverindex.jsp").forward(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request,response);
     }
 }

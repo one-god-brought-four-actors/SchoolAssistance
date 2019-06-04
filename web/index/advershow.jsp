@@ -23,19 +23,18 @@
 			<img src="Images/logo.png" alt="" class="logo">
 			<!--导航-->
 			<ul class="navLink">
-	            <li><a href="main">首页</a></li>
-	            <li><a href="index/work">援藏工作</a></li>
-	            <li><a href="index/policy">援藏政策</a></li>
-	            <li><a href="index/need">援藏需求</a></li>
-	            <li><a href="index/process">援藏路径</a></li>
-	            <li><a href="index/school">援藏高校</a></li>
-	            <!-- <li><a href="index/work">工作动态</a></li> -->
-	            <li><a href="index/adver">人员招聘</a></li>
+	            <li><a href="main.jsp">首页</a></li>
+	            <li><a href="WorkIndexServlet">援藏工作</a></li>
+	            <li><a href="PolicyIndexServlet">援藏政策</a></li>
+	            <li><a href="NeedIndexServlet">援藏需求</a></li>
+	            <li><a href="ProcessIndexServlet">援藏路径</a></li>
+	            <li><a href="SchoolIndexServlet">援藏高校</a></li>
+	            <li><a href="AdverIndexServlet">人员招聘</a></li>
         	</ul>
 			<!--登陆-->
 			<c:choose>
 				<c:when test="${manager == null}">
-					<a href="login.html" class="login"> <!--<span></span>-->登陆
+					<a href="login.html" class="login">登陆
 					</a>
 				</c:when>
 				<c:otherwise>
@@ -58,17 +57,18 @@
 					<h1>${adver.title }</h1>
 				</div>
 				<div class="detail-left-bottom">
-					<p>${adver.context }</p>
+					<p>${adver.info }</p>
 				</div>
 			</div>
 			<div class="detail-right">
 				<h3>相似的项目</h3>
 				<ul>
-					<c:forEach items="${advers }" var="a">
+					<c:forEach items="${alladvers }" var="a">
 						<li>
 							<h5
 								style="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-								<a href="index/toAdverShow/${a.id }">${a.title }</a>
+								<a href="AdverShowServlet?id=${a.id }">${a.title }</a>
+
 							</h5>
 							
 						</li>

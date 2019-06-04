@@ -44,12 +44,12 @@
                 </a>
             </li>
             <li>
-                <a href="index/workindex.jsp">
+                <a href="WorkIndexServlet">
                     <img src="index/image/work.png" >援藏工作
                 </a>
             </li>
             <li>
-                <a href="index/policyindex.jsp">
+                <a href="PolicyIndexServlet">
                     <img src="index/image/policy.png" >援藏政策
                 </a>
             </li>
@@ -59,18 +59,18 @@
                 </a>
             </li>
             <li>
-                <a href="index/processindex.jsp">
+                <a href="ProcessIndexServlet">
                     <img src="index/image/path.png" >援藏路径
                 </a>
             </li>
             <li>
-                <a href="index/schoolindex.jsp">
+                <a href="SchoolIndexServlet">
                     <img src="index/image/school.png" >援藏高校
                 </a>
             </li>
             <!-- <li><a href="index/work">工作动态</a></li> -->
             <li>
-                <a href="index/adverindex.jsp">
+                <a href="AdverIndexServlet">
                     <img src="index/image/recruit.png" >人员招聘
                 </a>
             </li>

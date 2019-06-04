@@ -23,14 +23,13 @@
         <img src="Images/logo.png" alt="" class="logo">
         <!--导航-->
         <ul class="navLink">
-            <li><a href="main">首页</a></li>
-            <li><a href="index/work">援藏工作</a></li>
-            <li><a href="index/policy">援藏政策</a></li>
-            <li><a href="index/need">援藏需求</a></li>
-            <li><a href="index/process">援藏路径</a></li>
-            <li><a href="index/school">援藏高校</a></li>
-            <!-- <li><a href="index/work">工作动态</a></li> -->
-            <li><a href="index/adver">人员招聘</a></li>
+            <li><a href="main.jsp">首页</a></li>
+            <li><a href="WorkIndexServlet">援藏工作</a></li>
+            <li><a href="PolicyIndexServlet">援藏政策</a></li>
+            <li><a href="NeedIndexServlet">援藏需求</a></li>
+            <li><a href="ProcessIndexServlet">援藏路径</a></li>
+            <li><a href="SchoolIndexServlet">援藏高校</a></li>
+            <li><a href="AdverIndexServlet">人员招聘</a></li>
         </ul>
         <!--登陆-->
         <c:choose>
@@ -55,48 +54,45 @@
             <ul class="pageMain">
             <c:forEach items="${advers }" var="s">
                 <li>
-                    <a href="index/toAdverShow/${s.id }">
+                    <a href="AdverShowServlet?id=${s.id }">
                         <span>${s.title }</span>
-                        <span>
-         <script type="text/javascript">
-			var time = new Date("${s.updateTime }");
-			var year = time.getFullYear();
-			var month = time.getMonth() + 1;
-			var day = time.getDate();
-			var hours = time.getHours() + 10;
-			if(hours >= 24){
-				hours -= 24;
-			}
-			var minute = time.getMinutes();
-			var second = time.getSeconds();
-			document.write(year + "-" + month + "-" + day + " " + hours + ":" + minute + ":" + second);
-		</script>
-         <%-- ${s.updateTime } --%></span>
+                        <span>${s.create_time}</span>
                     </a>
                 </li>
-                </c:forEach>
-                
+            </c:forEach>
             </ul>
-            <div class="pageBox">
-                <p class="len">共 <span>${total }</span>条记录</p>
-                <p class="iNum">当前第 <span>${page.page }/${page.totalPage }</span> 页</p>
-                
+            <div class="inline pull-right page">
+                ${page.getTotalRow() } 条记录 ${page.index }/${page.getTotalPage() } 页
                 <c:choose>
-			<c:when test="${page.page == 1 }">
-			</c:when>
-			<c:otherwise>
-				<a href='index/adver' class="first">首页</a>
-				<a href='index/adver?page= ${page.page - 1 }' class="prev">上一页</a>
-			</c:otherwise>
-		</c:choose>
+                    <c:when test="${page.index == 1 }">
+                    </c:when>
+                    <c:otherwise>
+                        <a href='AdverIndexServlet?index=1'>首页</a>
+                        <a href='AdverIndexServlet?index=${page.index - 1}'>上一页</a>
+                    </c:otherwise>
+                </c:choose>
+
+                <%--循环页数--%>
+                <c:forEach var="p" begin="1" end="${page.getTotalPage() }">
+                    <c:choose>
+                        <c:when test="${p == page.index }">
+                            <span class='current'>${p }</span>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="AdverIndexServlet?index=${p }">${p }</a>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+
+
                 <c:choose>
-			<c:when test="${page.page == page.totalPage }">
-			</c:when>
-			<c:otherwise>
-				<a href='index/adver?page= ${page.page + 1 }' class="next">下一页</a>
-				<a href='index/adver?page=${page.totalPage }' class="last">尾页</a>
-			</c:otherwise>
-		</c:choose>
+                    <c:when test="${page.index == page.getTotalPage() }">
+                    </c:when>
+                    <c:otherwise>
+                        <a href='AdverIndexServlet?index=${page.index + 1 }'>下一页</a>
+                        <a href='AdverIndexServlet?index=${page.getTotalPage() }'>尾页</a>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </div>
     </div>

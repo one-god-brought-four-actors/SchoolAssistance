@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page deferredSyntaxAllowedAsLiteral="true"%>
+<% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,27 +47,21 @@
     	<td>
     		<select id="schId" name="schId">
     			<c:forEach items="${schools }" var="sch">
-<<<<<<< HEAD
     				<option value="${sch.id }">${sch.school_name }</option>
-=======
     				<option value="${sch.id }">${sch.schoolName }</option>
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
     			</c:forEach>
     		</select>
     	</td>
     </tr>
     <tr>
-<<<<<<< HEAD
         <td class="tableleft">详细信息</td>
         <td>
             <div>
                 <script id="editor" type="text/plain" style="width:800px;height:400px;"></script>
             </div>
          </td>
-=======
     	<td class="tableleft">详细信息</td>
     	<td><script id="editor" type="text/plain" style="width:800px;height:400px;"></script></td>
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
     </tr>
 
     <tr>
@@ -79,7 +74,6 @@
 </table>
 </form>
 </body>
-<<<<<<< HEAD
 <script type="text/javascript">
             $(function () {
                 var ue = UE.getEditor('editor');
@@ -115,8 +109,4 @@
             window.location.href="AdverListServlet";
         }
 </script>
-
-=======
-<script type="text/javascript"></script>
->>>>>>> 809ed5f5a14a73e7b8d4271f46152c50335dd788
 </html>
