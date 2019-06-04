@@ -14,25 +14,6 @@
 <title>西藏援藏系统</title>
 <link rel="stylesheet" href="Css/public.css">
 <link rel="stylesheet" href="Css/aidTibetJob.css">
-	<style>
-		.page {
-			text-align: right;
-			margin-right: 25px;
-			margin-top: 5px;
-		}
-		.pull-right {
-			float: right;
-		}
-		.page a {
-			margin-left: 5px;
-			color: #0088cc;
-			text-decoration: none;
-		}
-		.page .current {
-			margin-left: 5px;
-			color: red;
-		}
-	</style>
 </head>
 <body>
 	<!--页头-->

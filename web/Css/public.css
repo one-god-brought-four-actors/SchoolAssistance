@@ -112,3 +112,20 @@ footer>div>div{
     background: #e9a515;
     border-radius: 2px;
 }
+.page {
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.pull-right {
+    float: right;
+}
+.page a {
+    margin-left: 5px;
+    color: #0088cc;
+    text-decoration: none;
+}
+.page .current {
+    margin-left: 5px;
+    color: red;
+}
