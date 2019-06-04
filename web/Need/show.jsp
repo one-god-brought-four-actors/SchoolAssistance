@@ -34,6 +34,7 @@
 
     </style>
 </head>
+<body><% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
 <form action="need/edit" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>

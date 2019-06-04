@@ -69,14 +69,14 @@
 			<img src="Images/logo.png" alt="" class="logo">
 			<!--导航-->
 			<ul class="navLink">
-	            <li><a href="main">首页</a></li>
-	            <li><a href="index/work">援藏工作</a></li>
-	            <li><a href="index/policy">援藏政策</a></li>
-	            <li><a href="index/need">援藏需求</a></li>
-	            <li><a href="index/process">援藏路径</a></li>
-	            <li><a href="index/school">援藏高校</a></li>
-	            <!-- <li><a href="index/work">工作动态</a></li> -->
-	            <li><a href="index/adver">人员招聘</a></li>
+				<li><a href="main.jsp">首页</a></li>
+				<li><a href="WorkIndexServlet">援藏工作</a></li>
+				<li><a href="PolicyIndexServlet">援藏政策</a></li>
+				<li><a href="NeedIndexServlet">援藏需求</a></li>
+				<li><a href="#">援藏路径</a></li>
+				<li><a href="SchoolIndexServlet">援藏高校</a></li>
+				<!-- <li><a href="index/work">工作动态</a></li> -->
+				<li><a href="AdverIndexServlet">人员招聘</a></li>
        		</ul>	
 			<!--登陆-->
 			<c:choose>

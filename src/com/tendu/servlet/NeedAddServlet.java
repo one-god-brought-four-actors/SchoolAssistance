@@ -2,6 +2,7 @@ package com.tendu.servlet;
 
 import com.tendu.mapper.NeedMapper;
 import com.tendu.mapper.SchoolMapper;
+import com.tendu.model.Auth;
 import com.tendu.model.Need;
 import com.tendu.model.School;
 import com.tendu.utils.DBTools;
@@ -20,6 +21,7 @@ import java.util.List;
 @WebServlet("/NeedAddServlet")
 public class NeedAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Auth.is_login(request, response, "login.html");
         request.setCharacterEncoding("utf-8");
         String title = request.getParameter("title");
         Integer risk_level = Integer.parseInt(request.getParameter("level"));
@@ -48,6 +50,7 @@ public class NeedAddServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Auth.is_login(request, response, "login.html");
         request.setCharacterEncoding("utf-8");
 
         SqlSession session = DBTools.getSession();
