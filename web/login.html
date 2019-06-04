@@ -3,60 +3,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-<link rel="stylesheet" type="text/css" href="./login/css/style.css" />
-<link rel="stylesheet" type="text/css" href="./login/css/skin_/login.css" />
+    <link rel="stylesheet" href="./login/css/skin_/mylogin.css">
 <script type="text/javascript" src="./login/js/jquery.js"></script>
 <script type="text/javascript" src="./login/js/jquery.select.js"></script>
 <title>援藏平台后台管理系统_用户登录</title>
+
 </head>
 
 <body>
-<div id="container">
-    <div id="bd">
-    	<div id="main">
-        	<div class="login-box">
-                <div id="logo"></div>
-                <h1></h1>
-                <div class="input username" id="uname">
-                    <label for="username">用户名</label>
-                    <input type="text" id="username" />
-                </div>
-                <div class="input psw" id="psw">
-                    <label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
-                    <input type="password" id="password" />
-                </div>
-                
-                <!-- 
-                <div class="input validate" id="validate">
-                    <label for="valiDate">验证码</label>
-                    <input type="text" id="valiDate" />
-                    <div class="value">X3D5</div>
-                </div>
-                 -->
-                <div id="btn" class="loginButton" style="margin-left: -264px;">
-                    <input type="button"  id="valiDate" onclick="login()" class="button" value="登录"  />
-                </div>
-            </div>
-        <div id="ft">CopyRight&nbsp;2018&nbsp;&nbsp;版权所有&nbsp;&nbsp;More Templates <a href="#" target="_blank" title="达内科技">达内科技</a></div>
-        </div>
-    </div>
-   
-</div>
+    <table class="container">
+        <tr>
+            <td><h1>用户登录</h1></td>
+        </tr>
+        <tr>
+            <td><label for="username">用户名</label></td>
+            <td><input class="lg-input" type="text" id="username" /></td>
+        </tr>
+        <tr>
+            <td><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label></td>
+            <td><input class="lg-input" type="password" id="password" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button"  id="valiDate" onclick="login()" class="button" value="登录"  />
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
 
 </body>
 <script type="text/javascript">
 
-	var height = $(window).height() > 445 ? $(window).height() : 445;
-	$("#container").height(height);
-	var bdheight = ($(window).height() - $('#bd').height()) / 2 - 20;
-	$('#bd').css('padding-top', bdheight);
-	$(window).resize(function(e) {
-        var height = $(window).height() > 445 ? $(window).height() : 445;
-		$("#container").height(height);
-		var bdheight = ($(window).height() - $('#bd').height()) / 2 - 20;
-		$('#bd').css('padding-top', bdheight);
-    });
-	$('select').select();
+
 	
 	function login(){
 		var username = $("#username").val();
