@@ -11,4 +11,6 @@ public interface PolicyMapper {
     Integer insert(Policy policy);
 
     String queryFilePathByPolicyId(Integer id);
+
+    Integer deleteById(Integer id);
 }

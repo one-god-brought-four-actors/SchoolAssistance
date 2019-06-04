@@ -132,12 +132,11 @@ body {
 		if(confirm("确定要删除吗？"))
 		{
 			$.ajax({
-				url:"policy/del/" + id,
+				url:"PolicyDeleteServlet?id=" + id,
 				async: true,
-				type: "post",
+				type: "get",
 				success: function(result){
-					alert(result);
-					window.location.href = "policy/all";
+					window.location.href = "PolicyListServlet";
 				},
 				error: function(){
 					alert("netword is error");

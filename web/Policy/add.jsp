@@ -80,7 +80,6 @@
 		        processData : false,
 				mimeType:"multipart/form-data",
 				success:function(message){
-					alert(message);
 					window.location.href = "PolicyListServlet";
 				},
 				error:function(){

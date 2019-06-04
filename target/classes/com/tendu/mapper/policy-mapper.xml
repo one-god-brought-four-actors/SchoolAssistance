@@ -14,4 +14,8 @@
     <select id="queryFilePathByPolicyId" parameterType="java.lang.Integer" resultType="java.lang.String">
         select filepath from policys where id=#{id} limit 0, 1
     </select>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from policys where id=#{id}
+    </delete>
 </mapper>
