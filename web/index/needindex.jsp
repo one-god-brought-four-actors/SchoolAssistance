@@ -14,6 +14,25 @@
 <title>西藏援藏系统</title>
 <link rel="stylesheet" href="Css/public.css">
 <link rel="stylesheet" href="Css/aidTibetJob.css">
+	<style>
+		.page {
+			text-align: right;
+			margin-right: 25px;
+			margin-top: 5px;
+		}
+		.pull-right {
+			float: right;
+		}
+		.page a {
+			margin-left: 5px;
+			color: #0088cc;
+			text-decoration: none;
+		}
+		.page .current {
+			margin-left: 5px;
+			color: red;
+		}
+	</style>
 </head>
 <body>
 	<!--页头-->
@@ -54,34 +73,42 @@
 			<div class="inForBox01">
 				<ul class="pageMain">
 					<c:forEach items="${needs }" var="s">
-						<li><a href="index/toNeedShow/${s.id }"> <span>${s.title }</span>
-								<span>${s.sendTime }</span>
+						<li><a href="NeedShowServlet?id=${s.id }"> <span>${s.title }</span>
+								<span>${s.create_time }</span>
 						</a></li>
 					</c:forEach>
 
 				</ul>
-				<div class="pageBox">
-					<p class="len">
-						共 <span>${total }</span>条记录
-					</p>
-					<p class="iNum">
-						当前第 <span>${page.page }/${page.totalPage }</span> 页
-					</p>
-
+				<div class="inline pull-right page">
+					${page.getTotalRow() } 条记录 ${page.index }/${page.getTotalPage() } 页
 					<c:choose>
-						<c:when test="${page.page == 1 }">
+						<c:when test="${page.index == 1 }">
 						</c:when>
 						<c:otherwise>
-							<a href='index/need' class="first">首页</a>
-							<a href='index/need?page= ${page.page - 1 }' class="prev">上一页</a>
+							<a href='NeedIndexServlet?index=1'>首页</a>
+							<a href='NeedIndexServlet?index=${page.index - 1}'>上一页</a>
 						</c:otherwise>
 					</c:choose>
+
+					<%--循环页数--%>
+					<c:forEach var="p" begin="1" end="${page.getTotalPage() }">
+						<c:choose>
+							<c:when test="${p == page.index }">
+								<span class='current'>${p }</span>
+							</c:when>
+							<c:otherwise>
+								<a href="NeedIndexServlet?index=${p }">${p }</a>
+							</c:otherwise>
+						</c:choose>
+					</c:forEach>
+
+
 					<c:choose>
-						<c:when test="${page.page == page.totalPage }">
+						<c:when test="${page.index == page.getTotalPage() }">
 						</c:when>
 						<c:otherwise>
-							<a href='index/need?page= ${page.page + 1 }' class="next">下一页</a>
-							<a href='index/need?page=${page.totalPage }' class="last">尾页</a>
+							<a href='NeedIndexServlet?index=${page.index + 1 }'>下一页</a>
+							<a href='NeedIndexServlet?index=${page.getTotalPage() }'>尾页</a>
 						</c:otherwise>
 					</c:choose>
 				</div>
