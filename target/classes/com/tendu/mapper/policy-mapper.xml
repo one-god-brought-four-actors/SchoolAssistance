@@ -6,4 +6,12 @@
     <select id="queryAll" resultType="com.tendu.model.Policy">
         select * from policys
     </select>
+
+    <insert id="insert" parameterType="com.tendu.model.Policy">
+        insert into policys(title, filepath) values (#{title}, #{filepath})
+    </insert>
+
+    <select id="queryFilePathByPolicyId" parameterType="java.lang.Integer" resultType="java.lang.String">
+        select filepath from policys where id=#{id} limit 0, 1
+    </select>
 </mapper>
