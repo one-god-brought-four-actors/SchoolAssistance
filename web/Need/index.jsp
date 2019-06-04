@@ -38,7 +38,7 @@ body {
 }
 </style>
 </head>
-<body>
+<body><% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
 	<form class="form-inline definewidth m20" action="need/search"
 		method="get">
 		标题： <input type="text" name="param" id="param"
