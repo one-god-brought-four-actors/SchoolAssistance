@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page import="com.tendu.model.Auth" %>
-<% if(!Auth.is_login(request)) response.sendRedirect("login.html"); %>
+<%--<%@page import="com.tendu.model.Auth" %>--%>
+<%--<% if(!Auth.is_login(request)) response.sendRedirect("login.html"); %>--%>
     
 <!DOCTYPE HTML>
 <html>
@@ -79,7 +79,8 @@
 			},
 			{text:'援藏高校',
 				items:[
-					{id:'1',text:'学校管理',href:'SchoolListServlet'}
+					{id:'1',text:'学校管理',href:'SchoolListServlet'},
+                    {id:'2',text:'工作动态',href:'WorkListServlet'}
 				]
 			},
 			{text:'援藏工作',
@@ -91,7 +92,7 @@
 			},
       		{text:'招聘管理',
 	  			items:[
-	  				{id:'1',text:'人才引进',href:'AdverListServlet'},
+	  				{id:'1',text:'人才引进',href:'AdverListServlet'}
 	  			]
       		}
 		]},

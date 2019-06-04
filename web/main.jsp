@@ -39,7 +39,7 @@
                 </a>
             </li>
             <li>
-                <a href="index/workindex.jsp">
+                <a href="WorkIndexServlet">
                     <img src="index/image/work.png" >援藏工作
                 </a>
             </li>

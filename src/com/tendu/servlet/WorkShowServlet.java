@@ -14,15 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/WorkInfoServlet")
-public class WorkInfoServlet extends HttpServlet {
+@WebServlet("/WorkShowServlet")
+public class WorkShowServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 登陆认证
-        Auth.is_login(request, response, "login.html");
+//        Auth.is_login(request, response, "login.html");
 
         Integer id = Integer.parseInt(request.getParameter("id"));
         SqlSession session = DBTools.getSession();
@@ -31,6 +31,6 @@ public class WorkInfoServlet extends HttpServlet {
         List<Work> list = workMapper.queryWorkById(id);
         request.setAttribute("work",list.get(0));
         session.close();
-        request.getRequestDispatcher("Work/show.jsp").forward(request,response);
+        request.getRequestDispatcher("index/workshow.jsp").forward(request,response);
     }
 }
