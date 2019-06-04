@@ -3,6 +3,7 @@ package com.tendu.servlet;
 
 import com.tendu.mapper.NeedMapper;
 import com.tendu.model.Need;
+import com.tendu.model.Page;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
 
@@ -24,9 +25,20 @@ public class NeedListServlet extends HttpServlet {
         // 查询数据库中所有需求的信息
         SqlSession session = DBTools.getSession();
         NeedMapper needMapper = session.getMapper(NeedMapper.class);
+        String index = request.getParameter("index");
 
-        List<Need> list = needMapper.queryAll();
+        if(index == null || "".equals(index)){
+            index = "1";
+        }
+
+        Page page = new Page();
+        Integer count = needMapper.getCountNeed();
+        page.setTotalRow(count);
+        page.setIndex(Integer.parseInt(index));
+
+        List<Need> list = needMapper.queryByPage(page);
         request.setAttribute("needs", list);
+        request.setAttribute("page", page);
         session.close();
         request.getRequestDispatcher("Need/index.jsp").forward(request, response);
     }

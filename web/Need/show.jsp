@@ -77,7 +77,7 @@
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="button"  class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
     </tr>
 </table>
@@ -86,7 +86,7 @@
 <script type="text/javascript">
     $(function () {
 		$('#backid').click(function(){
-				window.location.href="need/all";
+				window.location.href="NeedListServlet";
 		 });
     });
 </script>

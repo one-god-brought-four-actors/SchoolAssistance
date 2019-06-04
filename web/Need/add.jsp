@@ -76,7 +76,7 @@
         <td>
             <button type="submit"  class="btn btn-primary" type="button">保存</button>
             &nbsp;&nbsp;
-            <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="button"  class="btn btn-success" name="backid" id="backid">返回列表</button>
         </td>
     </tr>
 </table>
@@ -86,6 +86,10 @@
     $(function () {
     	
     	var ue = UE.getEditor('editor');
+        $('#backid').click(function(){
+            window.location.href="NeedListServlet";
+        });
+
     });
 </script>
 </html>

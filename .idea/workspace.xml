@@ -10,7 +10,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3826238a-6e16-4252-b60d-36f463805894" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/164e3eb4-86d9-4b58-8955-8b6e3401c1dc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatis-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/policys.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tendu/mapper/PolicyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tendu/mapper/policy-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tendu/model/Policy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tendu/servlet/PolicyAddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tendu/servlet/PolicyListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/AdverMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/NeedMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/PolicyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/SchoolMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/WorkMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/adver-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/mybatis-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/need-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/policy-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/school-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/mapper/work-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/Adver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/Need.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/Page.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/Policy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/School.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/model/Work.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/AdverAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/AdverEditServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/AdverInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/AdverListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/DelAdverServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/DeleteNeedServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/DeleteSchoolServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/DeleteUserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/DeleteWorkServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/NeedAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/NeedEditServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/NeedInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/NeedListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/PolicyAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/PolicyListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/SchoolAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/SchoolEditServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/SchoolInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/SchoolListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/UserAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/UserEditServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/UserInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/UserListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/UserLoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/WorkAddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/WorkEditServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/WorkInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/WorkListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/test/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tendu/utils/DBTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/mybatis_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mybatis_war_exploded.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/libraries/mybatisLib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis.iml" afterDir="false" />
@@ -25,6 +95,52 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/tendu/servlet/PolicyAddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tendu/servlet/PolicyAddServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Policy/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Policy/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Policy/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Policy/index.jsp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mybatisLib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mybatisLib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tendu/model/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tendu/model/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Css/aidTibetJob.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/Css/aidTibetJob.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/Css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/Css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/UserAgentUtils-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/aspectjweaver-1.6.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-lang3-3.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-annotations-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/json-20170516.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mybatis-3.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-oxm-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/ueditor-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,6 +190,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/PolicyAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-37">
@@ -81,23 +198,38 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/web/index/css/public.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/PolicyDownloadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="das://164e3eb4-86d9-4b58-8955-8b6e3401c1dc/schema/tendu/table/policys">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -125,27 +257,42 @@
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/web/image/right.svg">
+          <provider selected="true" editor-type-id="images" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/PolicyMapper.java">
+        <entry file="file://$PROJECT_DIR$/web/index/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="150">
               <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+=======
+            <state relative-caret-position="78">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="24" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/policy-mapper.xml">
+        <entry file="file://$PROJECT_DIR$/web/Css/public.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="195">
               <caret line="13" column="103" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
+=======
+            <state relative-caret-position="286">
+              <caret line="74" selection-start-line="74" selection-end-line="101" selection-end-column="1" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/tendu/model/Policy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
@@ -175,6 +322,20 @@
                 <element signature="e#1028#1029#0" expanded="true" />
               </folding>
             </state>
+=======
+        <entry file="file://$PROJECT_DIR$/web/Css/aidTibetJob.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1550" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
           </provider>
         </entry>
       </file>
@@ -206,6 +367,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/web/School/index.jsp" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/SchoolMapper.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/mybatis-mapper.xml" />
         <option value="$PROJECT_DIR$/src/com/tendu/model/User.java" />
@@ -216,7 +381,6 @@
         <option value="$PROJECT_DIR$/WebContent/School/edit.jsp" />
         <option value="$PROJECT_DIR$/web/ueditor/lang/zh-cn/zh-cn.js" />
         <option value="$PROJECT_DIR$/web/ueditor/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/web/main.jsp" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/school-mapper.xml" />
         <option value="$PROJECT_DIR$/src/com/tendu/model/Need.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/rtet.fxml" />
@@ -253,10 +417,19 @@
         <option value="$PROJECT_DIR$/web/Policy/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/PolicyMapper.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/mapper/policy-mapper.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/PolicyDownloadServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/servlet/PolicyAddServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tendu/model/Policy.java" />
         <option value="$PROJECT_DIR$/web/Policy/index.jsp" />
+=======
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/index/css/index.css" />
+        <option value="$PROJECT_DIR$/web/Css/public.css" />
+        <option value="$PROJECT_DIR$/web/Css/aidTibetJob.css" />
+        <option value="$PROJECT_DIR$/web/index/css/public.css" />
+        <option value="$PROJECT_DIR$/web/main.jsp" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
       </list>
     </option>
   </component>
@@ -276,11 +449,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="404" />
     <option name="y" value="38" />
     <option name="width" value="1457" />
@@ -288,6 +467,12 @@
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
+=======
+    <option name="x" value="49" />
+    <option name="y" value="12" />
+    <option name="width" value="1642" />
+    <option name="height" value="978" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -341,10 +526,11 @@
         <subPane>
           <expand>
             <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
@@ -366,21 +552,24 @@
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
             </path>
             <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tendu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tendu" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -393,6 +582,97 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tendu" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolAssistance" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SchoolAssistance" type="58d84e3e:PackageViewProjectNode" />
+              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="58d84e3e:PackageViewProjectNode" />
+              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
+              <item name="com.tendu" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="SchoolAssistance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
             </path>
             <path>
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
@@ -405,6 +685,7 @@
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
@@ -417,6 +698,8 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="Policy" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
           </expand>
           <select />
         </subPane>
@@ -426,8 +709,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559613543233" />
     <property name="database.console.LAST_STATE" value="false" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559613051387" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -437,16 +724,17 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JSP\SchoolAssistance\web\image" />
+      <recent name="F:\JSP\SchoolAssistance\web\Css" />
+      <recent name="F:\JSP\SchoolAssistance\web\ueditor\lang\zh-cn" />
+      <recent name="F:\JSP\SchoolAssistance\web\WEB-INF\lib" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/com/tendu/mapper" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\JSP\SchoolAssistance\web\ueditor\lang\zh-cn" />
-      <recent name="F:\JSP\SchoolAssistance\web\WEB-INF\lib" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/com/tendu/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -462,9 +750,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 8.5.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/mybatis_war_exploded/index.jsp" />
+    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/mybatis_war_exploded/main.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="mybatis:war exploded">
@@ -562,28 +849,49 @@
       <workItem from="1559375254859" duration="106000" />
       <workItem from="1559381833175" duration="10616000" />
       <workItem from="1559392629000" duration="2656000" />
+<<<<<<< HEAD
       <workItem from="1559607782748" duration="5591000" />
+=======
+      <workItem from="1559607986568" duration="4982000" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="68954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="404" y="38" width="1457" height="955" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.90614134" visible="true" weight="0.195053" />
+=======
+    <option name="totallyTimeSpent" value="68231000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="412" y="67" width="1642" height="978" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9288889" visible="true" weight="0.2629583" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+<<<<<<< HEAD
       <window_info id="Web" order="7" sideWeight="0.09385863" side_tool="true" visible="true" weight="0.195053" />
       <window_info anchor="bottom" id="Database Console" weight="0.3295838" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.49594438" />
+=======
+      <window_info id="Web" order="7" sideWeight="0.07111111" side_tool="true" visible="true" weight="0.2629583" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20023696" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,19 +900,30 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" order="11" weight="0.2992126" />
+=======
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3274559" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32943925" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24967907" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32986537" />
+      <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24967907" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1286219" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+=======
+      <window_info anchor="right" id="Maven" order="6" weight="0.32932997" />
+      <window_info anchor="right" id="Database" order="7" weight="0.19595449" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,6 +934,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/UserListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -639,6 +959,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
     <entry file="file://$PROJECT_DIR$/web/ueditor/lang/zh-cn/zh-cn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -740,6 +1062,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/web/Need/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -751,6 +1074,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-390">
           <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/NeedInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
         </state>
       </provider>
     </entry>
@@ -758,20 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-252">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Need/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Need/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -938,6 +1253,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://164e3eb4-86d9-4b58-8955-8b6e3401c1dc/schema/tendu/table/policys">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -946,6 +1262,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tendu/servlet/PolicyDownloadServlet.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/tendu/mapper/PolicyMapper.java">
+>>>>>>> 4480dd819320786477e220373c4137d6029feabc
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
@@ -1009,6 +1328,104 @@
           <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2288">
+          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="90" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2314">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Need/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="117" column="40" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="4" column="11053" selection-start-line="4" selection-start-column="11053" selection-end-line="4" selection-end-column="11060" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/adverindex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="103" selection-start-line="103" selection-end-line="119" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Css/aidTibetJob.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="74" selection-start-line="74" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/right.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

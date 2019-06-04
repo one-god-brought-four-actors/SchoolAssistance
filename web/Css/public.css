@@ -11,7 +11,7 @@ a{text-decoration: none}
 }
 header{
     height: 100px;
-    background: #091e77;
+    background: #247b9a;
 }
 header>iframe,footer>iframe{
     width: 100%;
@@ -59,9 +59,10 @@ header>iframe,footer>iframe{
     text-align: center;
     line-height: 30px;
     margin-top: 35px;
-    color: #fff;
-    background: #e9a515;
+    color: #247b9a;
+    background: #fff;
     font-size: 15px;
+    border-radius: 20px;
 }
 .login>span{
     display: inline-block;
