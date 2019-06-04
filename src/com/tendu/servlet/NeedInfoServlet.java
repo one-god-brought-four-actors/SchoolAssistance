@@ -2,6 +2,7 @@ package com.tendu.servlet;
 
 import com.tendu.mapper.NeedMapper;
 import com.tendu.mapper.SchoolMapper;
+import com.tendu.model.Auth;
 import com.tendu.model.Need;
 import com.tendu.model.School;
 import com.tendu.utils.DBTools;
@@ -22,7 +23,7 @@ public class NeedInfoServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        Auth.is_login(request, response, "login.html");
         Integer id = Integer.parseInt(request.getParameter("id"));
         SqlSession session = DBTools.getSession();
         NeedMapper needMapper = session.getMapper(NeedMapper.class);
