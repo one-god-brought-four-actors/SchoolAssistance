@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li>
-                <a href="index/needindex.jsp">
+                <a href="NeedIndexServlet">
                     <img src="index/image/need.png" >援藏需求
                 </a>
             </li>

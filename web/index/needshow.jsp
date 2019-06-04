@@ -150,7 +150,7 @@
 					</table>
 				</div>
 				<div class="detail-left-bottom">
-					<p>${need.context }</p>
+					<p>${need.info }</p>
 				</div>
 			</div>
 			<div class="detail-right">
@@ -160,7 +160,7 @@
 						<li>
 							<h5
 								style="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-								<a href="index/toNeedShow/${n.id }">${n.title }</a>
+								<a href="NeedShowServlet?id=${n.id }">${n.title }</a>
 							</h5>
 							
 						</li>
