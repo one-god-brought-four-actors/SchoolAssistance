@@ -38,6 +38,7 @@
 
     </style>
 </head>
+<body><% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
 <form action="NeedAddServlet" method="post">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
@@ -66,11 +67,10 @@
     	<td class="tableleft">详细信息</td>
     	<td>
     		<div>
-		    	<script id="editor" name="info" type="text/plain" style="width:800px;height:400px;"></script>
+                <script id="editor" name="info" type="text/plain" style="width:800px;height:400px;"></script>
 	    	</div>
     	</td>
     </tr>
-   
     <tr>
         <td class="tableleft"></td>
         <td>
