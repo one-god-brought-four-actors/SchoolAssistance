@@ -2,8 +2,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%--<%@page import="com.tendu.model.Auth" %>--%>
 <%--<% if (!Auth.is_login(request)) response.sendRedirect("login.html");%>--%>
-<% if(request.getAttribute("user") == null) response.sendRedirect("login.html"); %>
-    
+
+<% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,8 +22,8 @@
         <!--<img src="/chinapost/Public/assets/img/top.png">-->
     </div>
 
-    <div class="dl-log">欢迎您，<span class="dl-log-user">${manager.userName }</span>
-    <a href="#" id="logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    <div class="dl-log">欢迎您，<span class="dl-log-user">${user.username }</span>
+    <a href="UserLogoutServlet" id="logout" title="退出系统" class="dl-log-quit">[退出]</a>
     <a id="main-button" title="回到首页" class="dl-log-quit">[首页]</a>
     </div>
 </div>
@@ -43,25 +44,6 @@
 <script type="text/javascript" src="assets/js/common/main-min.js"></script>
 <script type="text/javascript" src="assets/js/config-min.js"></script>
 <script>
-	$(function(){
-		$("#logout").click(function(){
-			$.ajax({
-				url:"manager/logout",
-				type : 'post',
-				async : true,
-				success : function(message) {
-					alert(message);
-					window.location.href = "main";
-				},
-				error : function() {
-					alert('network is error');
-				}
-			});
-		});
-		$("#main-button").click(function(){
-			window.location.href="main";
-		});
-	});
 
 	
 	//console.log(menus);
