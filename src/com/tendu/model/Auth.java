@@ -19,7 +19,11 @@ public class Auth {
 
     public static void is_login(HttpServletRequest request, HttpServletResponse response, String redirect) {
         try {
-            request.getRequestDispatcher(redirect).forward(request, response);
+            HttpSession session = request.getSession();
+
+            if (session.getAttribute("user") == null) {
+                request.getRequestDispatcher(redirect).forward(request, response);
+            }
         }catch (ServletException e){
             e.printStackTrace();
         }catch (IOException e){
