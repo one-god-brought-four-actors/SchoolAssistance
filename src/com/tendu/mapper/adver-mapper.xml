@@ -25,7 +25,11 @@
         delete from advrs where id=#{id}
     </delete>
 
-    <update id="updateReadNum" parameterType="com.tendu.model.Adver">
-        update advrs set hits=#{hits} where id=#{id}
-    </update>
+    <select id="getCountAdver" resultType="java.lang.Integer">
+        select count(*) from advrs
+    </select>
+
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.Adver">
+        select * from advrs limit #{start}, #{maxRow}
+    </select>
 </mapper>
