@@ -8,17 +8,13 @@
           <element id="module-output" name="mybatis" />
         </element>
         <element id="directory" name="lib">
-<<<<<<< HEAD
           <element id="file-copy" path="$USER_HOME$/Downloads/mybatis-3.4.6.jar" />
-=======
-          <element id="library" level="project" name="mybatisLib" />
->>>>>>> 4480dd819320786477e220373c4137d6029feabc
-          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.16" />
-          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.1" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.16" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.1" />
         </element>
       </element>
     </root>
