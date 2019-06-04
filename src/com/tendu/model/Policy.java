@@ -5,7 +5,7 @@ public class Policy {
     private String title;
     private String filepath;
     private String create_time;
-    private String create_user;
+    private Integer create_user;
 
     public Integer getId() {
         return id;
@@ -39,11 +39,11 @@ public class Policy {
         this.create_time = create_time;
     }
 
-    public String getCreate_user() {
+    public Integer getCreate_user() {
         return create_user;
     }
 
-    public void setCreate_user(String create_user) {
+    public void setCreate_user(Integer create_user) {
         this.create_user = create_user;
     }
 

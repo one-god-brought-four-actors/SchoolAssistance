@@ -1,6 +1,7 @@
 package com.tendu.servlet;
 
 import com.tendu.mapper.PolicyMapper;
+import com.tendu.model.Auth;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
 
@@ -15,6 +16,7 @@ import java.io.IOException;
 public class PolicyDeleteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Auth.is_login(request, response, "login.html");
         Integer id = Integer.parseInt(request.getParameter("id"));
 
         SqlSession session = DBTools.getSession();

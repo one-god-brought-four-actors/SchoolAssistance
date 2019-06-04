@@ -8,7 +8,8 @@
     </select>
 
     <insert id="insert" parameterType="com.tendu.model.Policy">
-        insert into policys(title, filepath) values (#{title}, #{filepath})
+        insert into policys(title, filepath, create_time, create_user)
+        values (#{title}, #{filepath}, #{create_time}, #{create_user})
     </insert>
 
     <select id="queryFilePathByPolicyId" parameterType="java.lang.Integer" resultType="java.lang.String">
@@ -18,4 +19,16 @@
     <delete id="deleteById" parameterType="java.lang.Integer">
         delete from policys where id=#{id}
     </delete>
+
+    <select id="queryCountPolicy" resultType="java.lang.Integer">
+      select count(*) from policys
+    </select>
+
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.Policy">
+        select * from policys limit #{start}, #{maxRow}
+    </select>
+
+    <select id="queryById" parameterType="java.lang.Integer" resultType="com.tendu.model.Policy">
+        select * from policys where id=#{id}
+    </select>
 </mapper>

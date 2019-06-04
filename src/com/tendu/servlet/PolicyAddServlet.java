@@ -1,7 +1,9 @@
 package com.tendu.servlet;
 
 import com.tendu.mapper.PolicyMapper;
+import com.tendu.model.Auth;
 import com.tendu.model.Policy;
+import com.tendu.model.User;
 import com.tendu.utils.DBTools;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
@@ -14,7 +16,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.*;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Date;
@@ -23,9 +27,16 @@ import java.util.Date;
 @WebServlet("/PolicyAddServlet")
 public class PolicyAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        Auth.is_login(request, response, "login.html");
         String title = "";
         String filename = "";
         String savePath = "";
+
+        // 时间
+        Date date = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String create_time = dateFormat.format(date);
 
         // 上传目录
         String filepath = this.getServletContext().getRealPath("/WEB-INFO/upload");
@@ -95,12 +106,15 @@ public class PolicyAddServlet extends HttpServlet {
             }
 
             SqlSession session = DBTools.getSession();
+            User user = (User)request.getSession().getAttribute("user");
 
             PolicyMapper policyMapper = session.getMapper(PolicyMapper.class);
 
             Policy policy = new Policy();
             policy.setTitle(title);
             policy.setFilepath(savePath);
+            policy.setCreate_time(create_time);
+            policy.setCreate_user(user.getId());
 //            policyMapper
             policyMapper.insert(policy);
             session.commit();

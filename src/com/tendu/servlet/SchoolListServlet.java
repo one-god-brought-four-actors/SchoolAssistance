@@ -1,6 +1,7 @@
 package com.tendu.servlet;
 
 import com.tendu.mapper.SchoolMapper;
+import com.tendu.model.Auth;
 import com.tendu.model.School;
 import com.tendu.utils.DBTools;
 import org.apache.ibatis.session.SqlSession;
@@ -19,6 +20,7 @@ public class SchoolListServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Auth.is_login(request, response, "login.html");
         SqlSession session = DBTools.getSession();
         SchoolMapper schoolMapper = session.getMapper(SchoolMapper.class);
 

@@ -79,7 +79,7 @@
                 <c:choose>
                     <c:when test="${user !=null }">
                         <li>
-                            <span class="myuser">欢迎您,sdasd</span>
+                            <span class="myuser">欢迎您,${user.username }</span>
                         </li>
                         <li>
                             <a style="color: #247ba8;" class="login" href="index.jsp" >前往后台</a>

@@ -54,12 +54,12 @@
         </ul>
         <!--登陆-->
         <c:choose>
-				<c:when test="${manager == null}">
+				<c:when test="${user == null}">
 					<a href="login.html" class="login"> <!--<span></span>-->登陆
 					</a>
 				</c:when>
 				<c:otherwise>
-				欢迎您：${manager.userName}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
+				欢迎您：${user.username}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -75,22 +75,10 @@
             <ul class="pageMain">
             <c:forEach items="${policys }" var="s">
                 <li>
-                    <a title="点击下载文件" href="${pageContext.request.contextPath }/index/policydownload/${s.id }">
+                    <a title="点击下载文件" href="PolicyDownloadServlet?id=${s.id }">
                         <span>${s.title }</span>
                         <span>
-							<script type="text/javascript">
-								var time = new Date("${s.uptadeTime }");
-								var year = time.getFullYear();
-								var month = time.getMonth() + 1;
-								var day = time.getDate();
-								var hours = time.getHours() + 10;
-								if(hours >= 24){
-									hours -= 24;
-								}
-								var minute = time.getMinutes();
-								var second = time.getSeconds();
-								document.write(year + "-" + month + "-" + day + " " + hours + ":" + minute + ":" + second);
-							</script>
+                            ${s.create_time }
 						</span>
                     </a>
                 </li>
@@ -98,23 +86,23 @@
                 
             </ul>
             <div class="pageBox">
-                <p class="len">共 <span>${total }</span>条记录</p>
-                <p class="iNum">当前第 <span>${page.page }/${page.totalPage }</span> 页</p>
+                <p class="len">共 <span>${page.getTotalRow() }</span>条记录</p>
+                <p class="iNum">当前第 <span>${page.index }/${page.getTotalPage() }</span> 页</p>
                 
                 <c:choose>
-			<c:when test="${page.page == 1 }">
+			<c:when test="${page.index == 1 }">
 			</c:when>
 			<c:otherwise>
-				<a href='index/policy' class="first">首页</a>
-				<a href='index/policy?page= ${page.page - 1 }' class="prev">上一页</a>
+				<a href='PolicyIndexServlet' class="first">首页</a>
+				<a href='PolicyIndexServlet?id=${page.index - 1 }' class="prev">上一页</a>
 			</c:otherwise>
 		</c:choose>
                 <c:choose>
-			<c:when test="${page.page == page.totalPage }">
+			<c:when test="${page.index == page.getTotalPage() }">
 			</c:when>
 			<c:otherwise>
-				<a href='index/policy?page= ${page.page + 1 }' class="next">下一页</a>
-				<a href='index/policy?page=${page.totalPage }' class="last">尾页</a>
+				<a href='PolicyIndexServlet?id=${page.index + 1 }' class="next">下一页</a>
+				<a href='PolicyIndexServlet?id=${page.getTotalPage() }' class="last">尾页</a>
 			</c:otherwise>
 		</c:choose>
             </div>

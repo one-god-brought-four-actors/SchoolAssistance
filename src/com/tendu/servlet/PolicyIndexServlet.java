@@ -1,6 +1,8 @@
 package com.tendu.servlet;
 
+import com.tendu.mapper.AdverMapper;
 import com.tendu.mapper.PolicyMapper;
+import com.tendu.model.Adver;
 import com.tendu.model.Page;
 import com.tendu.model.Policy;
 import com.tendu.utils.DBTools;
@@ -14,14 +16,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/PolicyListServlet")
-public class PolicyListServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+@WebServlet("/PolicyIndexServlet")
+public class PolicyIndexServlet extends HttpServlet {
 
-    }
-
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         SqlSession session = DBTools.getSession();
+        PolicyMapper policyMapper = session.getMapper(PolicyMapper.class);
 
         String index = request.getParameter("index");
 
@@ -29,17 +30,21 @@ public class PolicyListServlet extends HttpServlet {
             index = "1";
         }
 
-        PolicyMapper policyMapper = session.getMapper(PolicyMapper.class);
         Page page = new Page();
-
         Integer count = policyMapper.queryCountPolicy();
-        page.setIndex(Integer.parseInt(index));
-        page.setTotalRow(count);
 
+        page.setTotalRow(count);
+        page.setIndex(Integer.parseInt(index));
+//
         List<Policy> list = policyMapper.queryByPage(page);
         request.setAttribute("policys", list);
         request.setAttribute("page", page);
+        session.close();
+        request.getRequestDispatcher("index/policyindex.jsp").forward(request, response);
+    }
 
-        request.getRequestDispatcher("Policy/index.jsp").forward(request, response);
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 }
