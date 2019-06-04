@@ -7,7 +7,10 @@ body{
     background-color: #247b9a;
 
 }
+
 .container{
+    text-align: center;
+    border-radius: 15px;
     position: absolute;
     padding: 20px;
     left: 0;
@@ -17,11 +20,23 @@ body{
     margin-right: auto;
     width: 400px;
     height: 500px;
-    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
 }
 .lg-input {
     border: none;
     height: 35px;
     width: 220px;
     border-radius: 5px;
+    color: #fff;
+    background-color: rgba(255,255,255,0.5);
+}
+#valiDate{
+    width: 200px;
+    height: 35px;
+    background-color: #10cd80;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
 }
