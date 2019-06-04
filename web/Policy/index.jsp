@@ -65,14 +65,14 @@ body {
 				${s.title }
 			</td>
 			<td style="max-width: 260px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-				<a title="点击下载文件" href="${pageContext.request.contextPath }/policy/download/${s.id }">${s.url }</a>
+				<a title="点击下载文件" href="${pageContext.request.contextPath }/policy/download/${s.id }">${s.getShortFileName() }</a>
 			</td>
-			<td>${s.uptadeTime }</td>
-			<td>${s.createUser }</td>
+			<td>${s.create_time }</td>
+			<td>${s.create_user }</td>
 			<td>
 				 <a class="option-button" href="${pageContext.request.contextPath }/policy/toEdit/${s.id }">编辑</a>
 				|<a class="option-button" onclick="del(${s.id});">删除</a>
-				|<a title="点击下载文件" href="${pageContext.request.contextPath }/policy/download/${s.id }">下载</a>
+				|<a title="点击下载文件" href="${pageContext.request.contextPath }/PolicyDownloadServlet?id=${s.id }">下载</a>
 			</td>
 		</tr>
 		</c:forEach>
@@ -123,7 +123,7 @@ body {
 <script>
     $(function () {
 		$('#addnew').click(function(){
-				window.location.href="policy/toAdd";
+				window.location.href="PolicyAddServlet";
 		 });
     });
 

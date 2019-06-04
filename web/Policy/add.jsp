@@ -72,7 +72,7 @@
 			obj.append("title", title);
 			
 			$.ajax({
-				url:'policy/add',
+				url:'PolicyAddServlet',
 				type:"post",
 				async: true,
 				data:obj,
@@ -81,7 +81,7 @@
 				mimeType:"multipart/form-data",
 				success:function(message){
 					alert(message);
-					window.location.href = "policy/all";
+					window.location.href = "PolicyListServlet";
 				},
 				error:function(){
 					alert('network is error');
