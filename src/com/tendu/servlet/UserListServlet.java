@@ -22,6 +22,9 @@ public class UserListServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        // 登陆认证
+        Auth.is_login(request, response, "login.html");
+
         // 查询数据库中所有管理员的信息
         SqlSession session = DBTools.getSession();
         UserMapper userMapper = session.getMapper(UserMapper.class);

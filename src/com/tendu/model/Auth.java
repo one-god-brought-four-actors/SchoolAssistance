@@ -1,5 +1,6 @@
 package com.tendu.model;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -13,6 +14,16 @@ public class Auth {
             return true;
         }else{
             return false;
+        }
+    }
+
+    public static void is_login(HttpServletRequest request, HttpServletResponse response, String redirect) {
+        try {
+            request.getRequestDispatcher(redirect).forward(request, response);
+        }catch (ServletException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
         }
     }
 }
