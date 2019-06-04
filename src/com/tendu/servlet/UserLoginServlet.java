@@ -51,14 +51,16 @@ public class UserLoginServlet extends HttpServlet {
 		
 		if(list != null && list.size() > 0) {
 			User user = list.get(0);
+			System.out.println(user.getUsername());
+			System.out.println(user.getPassword());
 			
 			if(user.getPassword().equals(password)) {
 				HttpSession httpSession = request.getSession();
 				httpSession.setAttribute("user", user);
 				
-				writer.print("登陆成功");
+				writer.print("1");
 			} else {
-				writer.print("登陆失败");
+				writer.print("0");
 			}
 		} else {
 			writer.print("用户未注册");
