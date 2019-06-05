@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.tendu.mapper.WorkMapper">
-    <select id="queryAllWork" resultType="com.tendu.model.Work">
-        select * from works
-    </select>
+<!--    <select id="queryAllWork" resultType="com.tendu.model.Work">-->
+<!--        select * from works-->
+<!--    </select>-->
     <select id="queryWorkById" parameterType="java.lang.Integer" resultType="com.tendu.model.Work">
         select * from works where id=#{id}
     </select>
@@ -17,4 +17,12 @@
     <delete id="deleteWorkById">
         delete from works where id=#{id}
     </delete>
+
+    <select id="getCountWork" resultType="java.lang.Integer">
+        select count(*) from works
+    </select>
+
+    <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.Work">
+        select * from works limit #{start}, #{maxRow}
+    </select>
 </mapper>

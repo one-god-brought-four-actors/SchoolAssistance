@@ -1,73 +1,70 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <link rel="stylesheet" href="./login/css/skin_/mylogin.css">
-<script type="text/javascript" src="./login/js/jquery.js"></script>
-<script type="text/javascript" src="./login/js/jquery.select.js"></script>
-<title>援藏平台后台管理系统_用户登录</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <link rel="stylesheet" href="login/css/skin_/mylogin.css">
+    <script type="text/javascript" src="login/js/jquery.js"></script>
+    <script type="text/javascript" src="login/js/jquery.select.js"></script>
+    <title>援藏平台后台管理系统_用户登录</title>
 
 </head>
 
 <body>
-    <table class="container">
-        <tr>
-            <td colspan="2"><h1>用户登录</h1></td>
-        </tr>
-        <tr>
-            <td><label for="username">用户名</label></td>
-            <td><input class="lg-input" type="text" id="username" /></td>
-        </tr>
-        <tr>
-            <td><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label></td>
-            <td><input class="lg-input" type="password" id="password" /></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="button"  id="valiDate" onclick="login()" class="button" value="登录"  />
-            </td>
-        </tr>
-    </table>
+<div class="container">
+    <h1>用户登录</h1>
+    <div class="user_Name">
+        <label for="username">用户名：</label>
+        <input class="lg-input" type="text" id="username" />
+    </div>
+    <div class="pass_Word">
+        <label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+        <input class="lg-input" type="password" id="password" />
+    </div>
+
+
+
+    <input type="button"  id="valiDate" onclick="login()" class="button" value="登   录"  />
+</div>
 
 </body>
 <script type="text/javascript">
 
 
-	
-	function login(){
-		var username = $("#username").val();
-		var password = $("#password").val();
-		
-		// key=value&key1=value
-		
-		var param = "username=" + username +"&password=" + password;
-		
-		console.log(param);
-		
-		$.ajax({
-			url: 'UserLoginServlet',
-			type: 'post',
-			async: true,
-			data: param,
-			success: function(res){
-				console.log(res);
-				// 请求成功的回调函数，返回的结果会作为success方法的参数传入
-				if(res == "1"){
-				    alert("登陆成功");
-					window.location.href = "main.jsp";
-				} else {
-					alert(res);
-				}
-			},
-			error: function(res){
-				alert("登陆失败，请稍后再试！");
-			}
-		});
-		
-	}
-	
-	
+
+    function login(){
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        // key=value&key1=value
+
+        var param = "username=" + username +"&password=" + password;
+
+        console.log(param);
+
+        $.ajax({
+            url: 'UserLoginServlet',
+            type: 'post',
+            async: true,
+            data: param,
+            success: function(res){
+                console.log(res);
+                // 请求成功的回调函数，返回的结果会作为success方法的参数传入
+                if(res == "1"){
+                    alert("登录成功!");
+                    window.location.href = "GoMainServlet";
+                } else {
+                    alert("登录失败");
+                }
+            },
+            error: function(res){
+                alert("登陆失败，请稍后再试！");
+            }
+        });
+
+    }
+
+
 </script>
 
 </html>

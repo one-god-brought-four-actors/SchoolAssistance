@@ -24,13 +24,13 @@
 			<!--导航-->
 			<ul class="navLink">
 	            <li><a href="GoMainServlet">首页</a></li>
-	            <li><a href="index/work">援藏工作</a></li>
-	            <li><a href="index/policy">援藏政策</a></li>
-	            <li><a href="index/need">援藏需求</a></li>
-	            <li><a href="index/process">援藏路径</a></li>
-	            <li><a href="index/school">援藏高校</a></li>
+	            <li><a href="WorkIndexServlet">援藏工作</a></li>
+	            <li><a href="PolicyIndexServlet">援藏政策</a></li>
+	            <li><a href="NeedIndexServlet">援藏需求</a></li>
+	            <li><a href="#">援藏路径</a></li>
+	            <li><a href="SchoolIndexServlet">援藏高校</a></li>
 	            <!-- <li><a href="index/work">工作动态</a></li> -->
-	            <li><a href="index/adver">人员招聘</a></li>
+	            <li><a href="AdverIndexServlet">人员招聘</a></li>
 				<!--登陆-->
 				<c:choose>
 					<c:when test="${user !=null }">
@@ -65,7 +65,7 @@
 					<h1>${work.title }</h1>
 				</div>
 				<div class="detail-left-bottom">
-					<p>${work.context }</p>
+					<p>${work.info }</p>
 				</div>
 			</div>
 			<div class="detail-right">
