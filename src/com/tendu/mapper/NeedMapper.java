@@ -21,4 +21,5 @@ public interface NeedMapper {
     Integer getCountNeed();
 
 
+    List<Need> queryLot();
 }

@@ -19,4 +19,6 @@ public interface AdverMapper {
     Integer getCountAdver();
 
     List<Adver> queryByPage(Page page);
+
+    List<Adver> queryLot();
 }

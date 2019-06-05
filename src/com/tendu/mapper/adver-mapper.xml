@@ -32,4 +32,8 @@
     <select id="queryByPage" parameterType="com.tendu.model.Page" resultType="com.tendu.model.Adver">
         select * from advrs limit #{start}, #{maxRow}
     </select>
+
+    <select id="queryLot" resultType="com.tendu.model.Adver">
+        select * from advrs limit 0,7
+    </select>
 </mapper>

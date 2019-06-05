@@ -38,4 +38,8 @@
     <select id="getCountNeed" resultType="java.lang.Integer">
         select count(*) from needs
     </select>
+
+    <select id="queryLot" resultType="com.tendu.model.Need">
+        select * from needs limit 0,10
+    </select>
 </mapper>
