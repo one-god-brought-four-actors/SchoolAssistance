@@ -24,31 +24,31 @@
         <!--导航-->
         <ul class="navLink">
             <li>
-                <a href="main">首页</a>
+                <a href="main.jsp">首页</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/work">援藏工作</a>
+                <a href="WorkIndexServlet">援藏工作</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/policy">援藏政策</a>
+                <a href="PolicyIndexServlet">援藏政策</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/need">援藏需求</a>
+                <a href="NeedIndexServlet">援藏需求</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/process">援藏路径</a>
+                <a href="#">援藏路径</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/school">援藏高校</a>
+                <a href="SchoolIndexServlet">援藏高校</a>
                 <span></span>
             </li>
             <li>
-                <a href="index/adver">人员招聘</a>
+                <a href="AdverIndexServlet">人员招聘</a>
                 <span></span>
             </li>
         </ul>
@@ -59,7 +59,7 @@
 					</a>
 				</c:when>
 				<c:otherwise>
-				欢迎您：${manager.userName}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
+				欢迎您：${manager.username}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -75,34 +75,46 @@
             <ul class="pageMain">
             <c:forEach items="${works }" var="s">
                 <li>
-                    <a title="点击查看详情" href="${pageContext.request.contextPath }/index/toWorkShow/${s.id }">
+                    <a title="点击查看详情" href="WorkShowServlet?id=${s.id }">
                         <span>${s.title }</span>
-                        <span>${s.uptateTime }</span>
+                        <span>${s.create_time }</span>
                     </a>
                 </li>
                 </c:forEach>
                 
             </ul>
-            <div class="pageBox">
-                <p class="len">共 <span>${total }</span>条记录</p>
-                <p class="iNum">当前第 <span>${page.page }/${page.totalPage }</span> 页</p>
-                
+            <div class="inline pull-right page">
+                ${page.getTotalRow() } 条记录 ${page.index }/${page.getTotalPage() } 页
                 <c:choose>
-			<c:when test="${page.page == 1 }">
-			</c:when>
-			<c:otherwise>
-				<a href='index/work' class="first">首页</a>
-				<a href='index/work?page= ${page.page - 1 }' class="prev">上一页</a>
-			</c:otherwise>
-		</c:choose>
+                    <c:when test="${page.index == 1 }">
+                    </c:when>
+                    <c:otherwise>
+                        <a href='WorkIndexServlet?index=1'>首页</a>
+                        <a href='WorkIndexServlet?index=${page.index - 1}'>上一页</a>
+                    </c:otherwise>
+                </c:choose>
+
+                <%--循环页数--%>
+                <c:forEach var="p" begin="1" end="${page.getTotalPage() }">
+                    <c:choose>
+                        <c:when test="${p == page.index }">
+                            <span class='current'>${p }</span>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="WorkIndexServlet?index=${p }">${p }</a>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+
+
                 <c:choose>
-			<c:when test="${page.page == page.totalPage }">
-			</c:when>
-			<c:otherwise>
-				<a href='index/work?page= ${page.page + 1 }' class="next">下一页</a>
-				<a href='index/work?page=${page.totalPage }' class="last">尾页</a>
-			</c:otherwise>
-		</c:choose>
+                    <c:when test="${page.index == page.getTotalPage() }">
+                    </c:when>
+                    <c:otherwise>
+                        <a href='WorkIndexServlet?index=${page.index + 1 }'>下一页</a>
+                        <a href='WorkIndexServlet?index=${page.getTotalPage() }'>尾页</a>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </div>
     </div>
