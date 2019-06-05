@@ -24,7 +24,7 @@
         <!--导航-->
         <ul class="navLink">
             <li>
-                <a href="main">首页</a>
+                <a href="GoMainServlet">首页</a>
                 <span></span>
             </li>
             <li>
@@ -51,18 +51,26 @@
                 <a href="index/adver">人员招聘</a>
                 <span></span>
             </li>
+            <!--登陆-->
+            <c:choose>
+                <c:when test="${user !=null }">
+                    <li>
+                        欢迎您,${user.username }
+                    </li>
+                    <li>
+                        <a style="color: #247ba8;" class="login" href="index.jsp" >前往后台</a>
+                    </li>
+
+                </c:when>
+                <c:otherwise>
+                    <li>
+                        <a style="color: #247ba8;" class="login" href="login.html" >登陆</a>
+                    </li>
+                </c:otherwise>
+            </c:choose>
+
         </ul>
-        <!--登陆-->
-        <c:choose>
-				<c:when test="${manager == null}">
-					<a href="login.html" class="login"> <!--<span></span>-->登陆
-					</a>
-				</c:when>
-				<c:otherwise>
-				欢迎您：${manager.userName}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
-					</a>
-				</c:otherwise>
-			</c:choose>
+
     </div>
 </header>
 <!--内容-->
