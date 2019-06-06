@@ -6,10 +6,16 @@
 
 <% if(session.getAttribute("user") == null) response.sendRedirect("login.html"); %>
 
+<<<<<<< HEAD
 =======
 <%--<% if(!Auth.is_login(request)) response.sendRedirect("login.html"); %>--%>
     
 >>>>>>> sanpi
+=======
+<%--<% if(!Auth.is_login(request)) response.sendRedirect("login.html"); %>--%>
+    
+
+>>>>>>> vvi
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -74,7 +80,8 @@
 			{text:'援藏工作',
 				items:[
                     {id:'1',text:'需求管理',href:'NeedListServlet'},
-                    {id:'2',text:'政策发布',href:'PolicyListServlet'}
+                    {id:'2',text:'政策发布',href:'PolicyListServlet'},
+                    {id:'3',text:'工作动态',href:'WorkListServlet'}
 
 				]
 			},

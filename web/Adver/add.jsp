@@ -48,7 +48,7 @@
     		<select id="schId" name="schId">
     			<c:forEach items="${schools }" var="sch">
     				<option value="${sch.id }">${sch.school_name }</option>
-    				<option value="${sch.id }">${sch.schoolName }</option>
+    				<option value="${sch.id }">${sch.school_name }</option>
     			</c:forEach>
     		</select>
     	</td>

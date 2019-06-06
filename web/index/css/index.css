@@ -81,7 +81,7 @@ header{
 .sestion1_head{
 	width: 100%;
 	height: 46px;
-	border-left: 8px solid green;
+	border-left: 8px solid #247b9a;
 	border-bottom: 2px solid black;
 }
 .sestion1_head a{
@@ -100,7 +100,27 @@ header{
 	width: 200px;
 	
 }
-
+.sestion1_a li {
+	margin-left: 26px;
+	line-height: 28px;
+	font-size: 16px;
+	position: relative;
+	top: 12px;
+}
+.sestion1_b li {
+	margin-left: 26px;
+	line-height: 28px;
+	font-size: 16px;
+	position: relative;
+	top: 12px;
+}
+.sestion1_c li {
+	margin-left: 26px;
+	line-height: 28px;
+	font-size: 16px;
+	position: relative;
+	top: 12px;
+}
 #sestion2{
 	width: 100%;
 	height: 330px;

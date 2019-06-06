@@ -23,25 +23,32 @@
 			<img src="Images/logo.png" alt="" class="logo">
 			<!--导航-->
 			<ul class="navLink">
-	            <li><a href="main.jsp">首页</a></li>
+	            <li><a href="GoMainServlet">首页</a></li>
 	            <li><a href="WorkIndexServlet">援藏工作</a></li>
 	            <li><a href="PolicyIndexServlet">援藏政策</a></li>
 	            <li><a href="NeedIndexServlet">援藏需求</a></li>
 	            <li><a href="ProcessIndexServlet">援藏路径</a></li>
 	            <li><a href="SchoolIndexServlet">援藏高校</a></li>
 	            <li><a href="AdverIndexServlet">人员招聘</a></li>
+				<!--登陆-->
+				<c:choose>
+					<c:when test="${user !=null }">
+						<li>
+							欢迎您,${user.username }
+						</li>
+						<li>
+							<a style="color: #247ba8;" class="login" href="index.jsp" >前往后台</a>
+						</li>
+
+					</c:when>
+					<c:otherwise>
+						<li>
+							<a style="color: #247ba8;" class="login" href="login.html" >登陆</a>
+						</li>
+					</c:otherwise>
+				</c:choose>
         	</ul>
-			<!--登陆-->
-			<c:choose>
-				<c:when test="${manager == null}">
-					<a href="login.html" class="login">登陆
-					</a>
-				</c:when>
-				<c:otherwise>
-				欢迎您：${manager.userName}<a href="index.jsp" class="login"> <!--<span></span>-->前往后台
-					</a>
-				</c:otherwise>
-			</c:choose>
+
 		</div>
 	</header>
 	<!--内容-->

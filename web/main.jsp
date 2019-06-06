@@ -28,6 +28,9 @@
             margin-top: 14px;
             display: block;
         }
+        ul, ol {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +42,7 @@
         <!--导航-->
         <ul class="navLink">
             <li>
-                <a href="main.jsp">
+                <a href="GoMainServlet">
                     <img src="index/image/index.png" >首  页
                 </a>
             </li>
@@ -134,18 +137,48 @@
             <h1>最新动态</h1>
             <div class="sestion1_a">
                 <div class="sestion1_head">
-                    <a href="http://localhost:8080/mybatis_war_exploded/index/need">援藏需求> ></a>
+                    <a href="NeedIndexServlet">援藏需求> ></a>
                 </div>
+                <ul>
+                    <c:forEach items="${needs }" var="n">
+                        <li>
+                            <a href="NeedShowServlet?id=${n.id }"> <span>${n.title }</span>
+                            <span>${n.create_time }</span>
+                            </a>
+                        </li>
+                    </c:forEach>
+
+                </ul>
             </div>
             <div class="sestion1_b">
                 <div class="sestion1_head">
-                    <a href="http://localhost:8080/mybatis_war_exploded/index/adver">人员招聘> ></a>
+                    <a href="AdverIndexServlet">人员招聘> ></a>
                 </div>
+                <ul>
+                    <c:forEach items="${advers }" var="s">
+                        <li>
+                            <a href="AdverShowServlet?id=${s.id }">
+                                <span>${s.title }</span>
+                                <span>${s.create_time}</span>
+                            </a>
+                        </li>
+                    </c:forEach>
+                </ul>
             </div>
             <div class="sestion1_c">
                 <div class="sestion1_head">
                     <a href="#">常见问题> ></a>
                 </div>
+                <ul>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+                    <li><a href="#">别问 问就是找人</a></li>
+
+                </ul>
             </div>
         </div>
 
